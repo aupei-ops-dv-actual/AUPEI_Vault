@@ -30,9 +30,9 @@ failure_topology:
   contagion: "aoc_global"
   class: "Ledger Spine"
   kill_switch_ids:
-    - "CONSTANT_ID_DRIFT"       # aliases diverge; retrieval becomes inconsistent
-    - "DEPENDENCY_BYPASS"       # constants served without prerequisite gates
-    - "UNLOGGED_REVISION"       # updates not reflected here → stale GraphRAG routing
+    - CONSTANT-ID-DRIFT       # aliases diverge; retrieval becomes inconsistent
+    - DEPENDENCY-BYPASS       # constants served without prerequisite gates
+    - UNLOGGED-REVISION       # updates not reflected here → stale GraphRAG routing
 
 rag_policy:
   gate_required: true

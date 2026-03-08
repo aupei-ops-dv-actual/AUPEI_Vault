@@ -28,10 +28,10 @@ failure_topology:
   contagion: "sector_B_macro"
   class: "Experimental Lane"
   kill_switch_ids:
-    - "NO_LOW_MASS_G_DEVIATION"
-    - "PARTICULATE_DM_REQUIRED"
-    - "STABLE_OBJECT_AT_THRESHOLD"
-    - "NO_TRANSITION_SIGNATURE"
+    - NO-LOW-MASS-G-DEVIATION
+    - PARTICULATE-DM-REQUIRED
+    - STABLE-OBJECT-AT-THRESHOLD
+    - NO-TRANSITION-SIGNATURE
 
 rag_policy:
   gate_required: true

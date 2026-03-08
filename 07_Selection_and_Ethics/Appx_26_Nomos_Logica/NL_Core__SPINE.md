@@ -26,9 +26,9 @@ failure_topology:
   contagion: "behavioral_global"
   class: "Theorem Layer"
   kill_switch_ids:
-    - "SHADOW_SUPERIOR_LONG_HORIZON"
-    - "CQI_SHADOW_GE_ALIGNMENT"
-    - "REGULATOR_MODEL_INVALID"
+    - SHADOW-SUPERIOR-LONG-HORIZON
+    - CQI-SHADOW-GE-ALIGNMENT
+    - REGULATOR-MODEL-INVALID
 
 rag_policy:
   gate_required: true

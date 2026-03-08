@@ -32,9 +32,9 @@ failure_topology:
   contagion: "framework_integrity"
   class: "Operational Spine"
   kill_switch_ids:
-    - "LEDGER_FROZEN"          # no active falsification stream → framework drifts to myth
-    - "NO_DIFFERENTIATOR_TEST" # experiments cannot distinguish structure from story
-    - "RESULTS_UNLOGGED"       # work not encoded back into ledger → loses continuity
+    - LEDGER-FROZEN          # no active falsification stream → framework drifts to myth
+    - NO-DIFFERENTIATOR-TEST # experiments cannot distinguish structure from story
+    - RESULTS-UNLOGGED       # work not encoded back into ledger → loses continuity
 
 rag_policy:
   gate_required: true

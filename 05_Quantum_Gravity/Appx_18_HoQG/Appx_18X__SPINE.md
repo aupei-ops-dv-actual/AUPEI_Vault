@@ -27,14 +27,14 @@ enables:
 failure_topology:
   class: "Closure Node"
   kill_switch_ids:
-    - "DIVERGENT_LAMBDA"                # λ not finite under any admissible route
-    - "DGDT_BOUND_VIOLATION"            # Ġ/G exceeds LLR empirical bound
-    - "A2_FREE_DECAY_SCALE"             # Decay length/exponent introduced without upstream derivation
-    - "A2_INTEGRABILITY_BY_TASTE"       # Warp factor assumed without derivation of decay scale
-    - "A2_ONLY_RATIO_SAVED"             # A2 can only bound κ₇/λ by importing observational constraints
-    - "KK_TRUNCATION_VIOLATION"         # Retained graviton mode has internal dependence, or KK backreaction uncontrolled
-    - "POSTHOC_KAPPA7_FIT"              # κ₇ fitted after λ evaluation to reproduce observed G
-    - "NORMALIZATION_CHANNEL_MISMATCH"  # KK reduction and GR recovery give different G₄
+    - DIVERGENT-LAMBDA                # λ not finite under any admissible route
+    - DGDT-BOUND-VIOLATION            # Ġ/G exceeds LLR empirical bound
+    - A2-FREE-DECAY-SCALE             # Decay length/exponent introduced without upstream derivation
+    - A2-INTEGRABILITY-BY-TASTE       # Warp factor assumed without derivation of decay scale
+    - A2-ONLY-RATIO-SAVED             # A2 can only bound κ₇/λ by importing observational constraints
+    - KK-TRUNCATION-VIOLATION         # Retained graviton mode has internal dependence, or KK backreaction uncontrolled
+    - POSTHOC-KAPPA7-FIT              # κ₇ fitted after λ evaluation to reproduce observed G
+    - NORMALIZATION-CHANNEL-MISMATCH  # KK reduction and GR recovery give different G₄
 
 imported_assumptions:
   - id: "COMPACT_INTERNAL_SECTOR"
