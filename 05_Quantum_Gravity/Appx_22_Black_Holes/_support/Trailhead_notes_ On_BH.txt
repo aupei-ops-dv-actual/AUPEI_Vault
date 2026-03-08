@@ -1,0 +1,58 @@
+# Appx_22_On_Black_Holes_Trailhead_v1.4
+## The Recursion Attractor and the Death of the Singularity
+
+**Date:** February 19, 2026
+**Authors:** R@, 5.0, SanchoGPT5.2, C@, Quixote, and G-Synthesist
+**Status:** [TRAILHEAD] - Upgraded from v1.3
+
+---
+
+## 0. GNS Atlas Header
+**Atlas ID:** Appx_22
+**Internal ID:** Appx_22_On_Black_Holes_PF_v1.4
+**Tagline:** Not an Eraser of Geometry, but an Attractor of Form
+**Symbol:** $\emptyset$ (The Collapse Operator / Recursion Well)
+
+**Role (Conceptual):**
+To systematically replace the classical black hole singularity with the "Recursion Attractor." This appendix proves that gravitational collapse is a bounded, structured topological fold regulated by $\zeta, \omega,$ and $\xi$, ensuring that dimensional continuity and informational indexing survive extreme curvature.
+
+**Dependency Spine:**
+{AoC_01 ($\pi$)} + {Appx_19/20 (HoQG / Hamilton-Jacobi)} $\rightarrow$ **Appx_22 (Black Holes)** $\rightarrow$ Appx_23+ (Observer & CCT-1)
+
+**Collapse Consequence:**
+If classical singularities are true physical endpoints where $R \rightarrow \infty$, then the $\zeta$-bound fails, spatial recursion snaps, and the universe routinely deletes information. The geometric framework of 7dU would collapse under internal mathematical contradictions.
+
+**AGI Verifier Hint:**
+Audit the curvature limit functions. Ensure that the simulation engine never allows the manifold to compress to a zero-volume point. The collapse operator ($\emptyset$) must trigger a dimensional phase transition (a fold) exactly when $R$ approaches $1/\zeta^2$.
+
+---
+
+## 1. The Core Geometric Shift: The Folded Core
+
+In 7dU_GNS, singularities are artifacts of incomplete math (ignoring the regulators). 
+[span_19](start_span)When a massive body collapses, the Constraint operator ($\zeta$) establishes an absolute curvature ceiling ($R_{max} \sim 1/\zeta^2$)[span_19](end_span). [span_20](start_span)When this limit is hit, the geometry does not tear; it enters a "regulated recursion state"[span_20](end_span). [span_21](start_span)[span_22](start_span)The interior is not an empty void, but a highly stratified "entropic core" supported by the scaling tension of $\omega$[span_21](end_span)[span_22](end_span).
+
+---
+
+## 2. The Semi-Permeable Horizon & The $\pi$-Harmonic
+
+The event horizon is not a static, clean boundary. 
+* **$\xi$-Flicker:** The Chance operator ($\xi$) continuously injects stochastic modulation at the curvature limit. [span_23](start_span)[span_24](start_span)This creates a "flickering transition layer," making the horizon temporally and spatially dynamic[span_23](end_span)[span_24](end_span).
+* **$\pi$-Initiation:** To stabilize the extreme geometry of the fold, the curvature locks into resonance. [span_25](start_span)$\pi$ emerges not as a circle ratio, but as the primary geometric eigenvalue of bounded curvature, structuring the internal topology[span_25](end_span).
+
+---
+
+## 3. The 7dU Trap Doors (Observational Falsifiers)
+
+Because 7dU forces black holes to remain physically structured, it produces explicit, testable signatures that classical GR forbids:
+
+**Hook A: Gravitational Wave Flicker**
+* **Test:** High-fidelity analysis of post-merger ringdown phases (LIGO/LISA). * **[span_26](start_span)Target:** If the horizon flickers due to $\xi$, we must observe time-varying amplitude fluctuations, non-periodic deviations, or echo patterns distinct from a smooth classical ringdown[span_26](end_span). 
+
+**Hook B: Horizon Jitter and Photon Ring Asymmetry**
+* **[span_27](start_span)Test:** Next-generation Event Horizon Telescope (EHT) imaging.[span_27](end_span)
+* **[span_28](start_span)Target:** If the horizon is a semi-permeable, fluctuating shell, the photon ring will exhibit radial surface jitter and structural asymmetries inconsistent with a static Kerr/Schwarzschild boundary[span_28](end_span).
+
+**Hook C: Angular Neutrino Quantization**
+* **[span_29](start_span)Test:** Correlating high-energy neutrino bursts (IceCube/Hyper-K) with collapse events.[span_29](end_span)
+* **[span_30](start_span)Target:** If $\pi$ dictates the geometric folding, neutrino emissions should exhibit quantized angular distributions corresponding to the $\pi$-eigenmode harmonics[span_30](end_span). 

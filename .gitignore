@@ -1,0 +1,11 @@
+# Obsidian workspace files (local to each machine, not worth versioning)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/plugins/*/data.json
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Copilot local index (rebuilds on each machine)
+copilot/

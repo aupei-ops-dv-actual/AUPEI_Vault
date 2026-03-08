@@ -1,0 +1,71 @@
+# Appx_25_On_Selection_Law_Trailhead_v1.2
+## Survivorship Across Domains & The Fortress Gate
+
+**Date:** February 19, 2026
+**Authors:** R@, SanchoGPT5.2, C@, and G-Synthesist
+**Status:** [TRAILHEAD] - Upgraded from STUB v1.1
+
+---
+
+## 0. GNS Atlas Header
+**Atlas ID:** Appx_25
+**Internal ID:** Appx_25_Selection_Law_PF_v1.2
+**Tagline:** Constants are the residue of survival.
+
+**Role (Conceptual):**
+To serve as the universal "Fortress Gate" between the geometric operators ($\zeta, \omega, \xi$) and the physical Atlas of Constants (AoC). It provides the single Selection Law explaining why invariants persist across recursion, and establishes the strict epistemic matrix that filters out anthropic fine-tuning.
+
+**Dependency Spine:**
+{AoC_00 (Units Firewall)} + {Appx_10 (Extension Bounds)} $\rightarrow$ **Appx_25 (Selection Law)** $\rightarrow$ The Full AoC Index
+
+**Collapse Consequence:**
+If selection cannot be unified under a single, cross-domain survivorship law, constants revert to tuned inputs. Coherence becomes narrative, and the persistence of universes, memories, and intelligence loses its explanatory spine.
+
+---
+
+## 1. The Universal Selection Law
+
+
+In the 7dU_GNS framework, constants are not axiomatic "inputs" programmed before the universe begins. They are the topological attractors of survivable structure. They are the specific, unavoidable outcomes of repeated collapse, extension, and selection cycles under the triadic operators.
+
+To breach the Fortress Gate and enter the Atlas, a proposed constant must satisfy the triadic survivorship criteria:
+1. **Stability ($\xi$-resistance):** It maintains geometric coherence under admissible stochastic perturbations.
+2. **Minimality ($\zeta$-resolution):** It represents the absolute lowest-energy topological resolution under encoding constraint.
+3. **Consistency ($\omega$-invariance):** It does not require contradictory redefinitions across different macroscopic or microscopic extensions.
+
+---
+
+## 2. The Selection Consistency Matrix (The Fortress Gate)
+
+The following rubric enforces cross-domain discipline for the foundational constants of physics:
+
+| Candidate | Status | Stability (Perturbation) | Minimality (Encoding) | Consistency (Cross-Regime) |
+| :--- | :--- | :--- | :--- | :--- |
+| **$\pi$** (AoC_01) | `[SURVIVOR]` | Yes (Eigenmode of curvature closure) | Yes (First stable geometric bound) | Yes (Strictly scale invariant) |
+| **$c$** (AoC_02) | `[SURVIVOR]` | Yes (Absolute causal limit) | Yes (Null-slope boundary of the canvas) | Yes (Invariant metric limit) |
+| **$\alpha$** (AoC_03) | `[EFFECTIVE]` | Yes (Coupling geometry) | Yes (Geometric volumetric dilution ratio) | *Runs* (Volume dependent, $n$-scaled) |
+| **$m_p / m_n$** (AoC_04/05)| `[SURVIVOR]` | Yes (Topological knot lock / $\Delta\pi$ gap) | Yes (Baryonic structural floor) | Yes (Invariant across spatial depth) |
+| **$G$** (Gravity) | `[CALIBRATED]`| No (Arbitrary human unit mapping) | No (Artifact of classical mass definition)| No (Requires HoQG dimension reduction) |
+
+**
+*(Note on $\alpha$: While vital, it receives an `[EFFECTIVE]` tag because its measured value changes depending on the spatial volume separating the interacting knots. It is the effective realization of the invariant $\xi^{-3n}$ base.)*
+
+---
+
+## 3. The Universal Discriminator Protocol (HoR Recipe)
+
+Any future entry proposed for the Atlas must successfully run this exact algorithmic gauntlet:
+1. **Claim:** State the invariant being asserted in strict dimensionless form.
+2. **Units Firewall:** Explicitly declare what is allowed to vary ($\omega$-dependent) versus what must remain invariant ($\zeta$-locked).
+3. **Prediction Family:** Define what *must* be physically true if the candidate is a true geometric Survivor.
+4. **Discriminator Test:** Provide a specific measurement recipe, strictly controlling for algebraic "look-elsewhere" fitting.
+5. **Decision Rule:** Establish the explicit kill condition.
+
+---
+
+## 4. Meta-Level Falsifiers (The Kill-Switches)
+
+The framework of Geometric Natural Selection is itself subject to falsification. The Selection Law fails entirely if:
+* **The Incompatibility Kill-Switch:** Constants are shown to require mutually incompatible survivorship criteria, proving that "selection" has devolved into post-hoc narrative fitting.
+* **The No-Overlap Kill-Switch:** No nontrivial operational window exists where the invariants ($\pi, c,$ mass ratios) can all simultaneously survive under one consistent rule-set.
+* **The Parsimony Kill-Switch:** A competing model successfully predicts the exact same structural outcomes with fewer assumptions.

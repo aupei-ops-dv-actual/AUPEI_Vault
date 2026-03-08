@@ -1,0 +1,66 @@
+# Appx_17_On_EFT_and_Renormalization_Trailhead_v1.1
+## Survivability Bookkeeping Across Scale
+
+**Date:** February 19, 2026
+**Authors:** R@, SanchoGPT5.2, C@, G3, and G-Synthesist
+**Status:** [TRAILHEAD] - Upgraded from STUB vX.X
+
+---
+
+## 0. GNS Atlas Header
+**Atlas ID:** Appx_17
+**Internal ID:** Appx_17_On_EFT_RG_PF_v1.1
+**Tagline:** The Trace of Constraint Management
+
+**Role (Conceptual):**
+To recast Renormalization Group (RG) flow and Effective Field Theory (EFT) cutoffs not as mathematical regularizations, but as the literal geometric trace of how the $\zeta / \omega / \xi$ operators redistribute coherence across different spatial resolutions. 
+
+**Dependency Spine:**
+{Appx_10 (Extension Bounds)} + {Appx_12 (Force Unification)} + {Appx_15 (SM Ledger)} $\rightarrow$ **Appx_17 (EFT & Renormalization)** $\rightarrow$ Appx_18 (HoQG)
+
+**Collapse Consequence:**
+If RG flow cannot be constrained by geometric volume scaling, then the 7dU_GNS framework loses its ability to explain why interaction strengths change with energy. The "Units Firewall" would fail, as we would be unable to distinguish between a fundamental geometric invariant and a scale-dependent effective parameter.
+
+**AGI Verifier Hint:**
+Audit the "Running Ledger." The verifier must ensure that true [SURVIVORS] (like $\pi$, $c$, and the base interaction invariant $\alpha_{geom}$) never drift. Only the *effective* coupling—which represents the volumetric dilution between interacting knots—is permitted to "run."
+
+---
+
+## 1. The Core Conceptual Shift: Scale as Volumetric Dilution
+
+In standard QFT, changing the energy scale (zooming in) changes the strength of forces due to vacuum polarization. 
+
+In the 7dU_GNS framework, "scale" is not an abstract dial; it is a literal measure of spatial volume ($\omega$). 
+Recall the Volumetric Emergence Equation from Appx_12: $\alpha_n = \xi^{-3n}$. 
+The integer shelves ($n=0, 1, 2$) represent stable, quantized phase transitions. **RG Flow is simply the continuous interpolation between these stable shelves.** When you increase the collision energy in a particle accelerator, you are mathematically forcing the interacting $\zeta$-knots closer together, shrinking the $\omega$-volume between them. "Running" encodes exactly which interaction descriptions survive as that admissible volume shrinks.
+
+---
+
+## 2. The EFT to GNS Translation Dictionary
+
+To successfully map standard EFT practices into Proofield geometry, we define the following :
+
+* **The Cutoff ($\Lambda$):** * *Standard:* The energy scale where a theory breaks down.
+  * *GNS Translation:* **The Extension Bound Limit.** The specific geometric threshold where the current topological arrangement can no longer manage the entropy of Chance ($\xi$) without snapping to a new $n$-shelf.
+* **Relevant / Irrelevant Operators:**
+  * *Standard:* Terms that grow or shrink at low energies.
+  * *GNS Translation:* **Survivability Pruning.** Operators that map to stable, low-curvature volume limits survive; operators that require extreme, localized $\zeta$-constraint are smoothed out (pruned) by the expanding $\omega$-canvas.
+* **Renormalization Group (RG) Flow:**
+  * *Standard:* The differential equations governing parameter drift.
+  * *GNS Translation:* **The Bookkeeping Trace.** The deterministic geometric path a system takes when compensating for changes in spatial resolution.
+
+---
+
+## 3. The Units Firewall Compliance (The Running Ledger)
+
+This appendix strictly enforces what is allowed to change.
+* **Invariant (DOES NOT RUN):** The fundamental dimensional constraints ($\pi^2$, $\Delta\pi$), the causal rigidifier ($c$), and the raw entropy injection rate ($\xi$).
+* **Effective (DOES RUN):** The measured cross-sections of interactions, the effective masses of dressed particle states, and the apparent vacuum energy density. These run precisely because they are volume-dependent measurements.
+
+---
+
+## 4. Primary Falsifier & Discriminator
+
+**The Non-Circularity Discriminator:**
+* **Test:** The framework must predict the direction and slope of the RG flow for a specific interaction *without* fitting empirical data. The flow must be derivable purely from the geometric volume reduction between the $n$-shelves.
+* **Falsification Hook:** If the mathematically derived 7dU RG flow family contradicts the highly precise, empirically verified QED or QCD beta functions, the geometric scaling hypothesis is falsified. The framework would collapse back into post-hoc interpretation.

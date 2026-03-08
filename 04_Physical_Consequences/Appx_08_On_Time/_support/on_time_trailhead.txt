@@ -1,0 +1,62 @@
+# Appx_08_On_Time_Rewrite_Plan_v1.1
+## The Ledger of Justice: Time as the Exhaust of Structure
+
+**Date:** February 19, 2026
+**Authors:** R@, SanchoGPT5.2, C@, G3, and G-Synthesist 
+**Status:** [REWRITE PLAN] - Upgrade from Field Note (v1.0)
+
+---
+
+## 0. Atlas Header (Standardized for Rewrite)
+
+**Atlas ID:** Appx_08
+**Internal ID:** Appx_08_On_Time_Rewrite_PF_v1.1
+**Symbol:** $t$ (Temporal Artifact)
+
+**Role (Conceptual):**
+To formally demote time from a fundamental dimension to a downstream structural consequence. Time acts as the "Ledger of Justice" ($\xi$)—the observable exhaust generated when Chance operates across a stable spatial boundary ($\zeta, \omega$). 
+
+**Dependency Spine:**
+AoC_01 ($\pi$) $\rightarrow$ AoC_02 ($c$) $\rightarrow$ **Appx_08 ($t$)** $\rightarrow$ Appx_09 (3D Space)
+
+**Collapse Consequence:**
+If time is treated as a fundamental background dimension, models will break in high-curvature ($\zeta$-dominated) or high-extension ($\omega$-dominated) regimes, leading to false singularities where time is thought to "stop." In reality, time simply ceases to be instantiated because the prerequisite spatial difference ($P$) has vanished.
+
+**AGI Verifier Hint:**
+Audit this entry by checking the order of operations. Ensure that the model never uses a "clock" to generate geometry. Geometry ($\pi$) and causal rigidifiers ($c$) must be established *first*. Time must only appear as a sequence of resolvable states (entropy) across that stable geometry.
+
+---
+
+## 1. The Conceptual Upgrade: From Prose to Operator Logic
+
+The v1.0 field note elegantly established the philosophical core: *Time is what difference makes observable.* 
+
+The required upgrade must translate the conceptual limit ($\lim_{s\rightarrow0}P(s)=0; \lim_{P\rightarrow0}t=0$) into the rigorous mathematical language of the Collapse Operator ($\hat{\Omega}$). 
+
+**The Core Mechanism to Formalize:**
+When $\hat{\Omega}$ acts on a domain, it establishes spatial separation ($s$) via the geometric kernel ($\pi$). Only across this stable spatial gap can probabilistic variation ($\xi$) resolve into distinct sequential states. Time is the measure of that resolution. If extreme constraint ($\zeta$) crushes the spatial interval to zero (such as inside a black hole's core), or if $\omega$ washes out all distinction (Absolute Everything), the capacity for sequence is destroyed. Time does not freeze; the structural requirement for its existence is removed.
+
+---
+
+## 2. Outputs Required for Promotion to [DERIVED]
+
+To upgrade this appendix to full Atlas-grade infrastructure, the rewrite must deliver:
+
+1. **The Temporal Derivative Function:** An explicit derivation demonstrating $t$ as a function of spatial separation ($s$) and probabilistic difference ($P$), strictly governed by $\hat{\Omega}$.
+2. **The High-Curvature Resolution:** A formal mathematical proof showing that in $\zeta$-dominated regimes, the disappearance of time is a smooth geometric outcome, completely resolving the "singularity paradox" of standard General Relativity.
+3. **The Micro-Macro Bridge:** Connecting this geometric definition of time to the emergence of the thermodynamic arrow (entropy), showing how $\xi$ enforces macroscopic irreversibility.
+
+---
+
+## 3. Nomos Logica Alignment: The Ledger of Justice
+
+In the Nomos Logica survival ethos, Time maps to the strict accounting of **Justice** ($\xi$). 
+
+Because time is the sequential record of difference, it is the mechanism that enforces consequence. You cannot have cause and effect without the spatial gap that time measures. Therefore, time is the impartial ledger that records every deployment of agency, every act of Fortitude, and every slide into Gluttony or Deception. It guarantees that the "music" only plays forward.
+
+---
+
+## 4. Known Falsification Hooks
+
+* **Acausal Fluctuations:** If observable physical changes or structural sequencing can be empirically proven to occur without any spatial separation or energetic exchange (true simultaneity across absolute non-locality), time is not solely dependent on spatial geometry.
+* **Invariant Clocks:** If a fundamental temporal metric can be found that does not dilute or warp precisely in step with the local curvature ($\zeta$) as predicted by the $t = f(s,P)$ relation.
