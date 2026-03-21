@@ -1,13 +1,16 @@
 ---
 node_id: "AO_02"
 title: "AO_02 — Agent States and Roles"
-version: "v1.1"
+version: "v1.2"
 date_minted: "2026-02-XX"
+date_revised: "2026-03-20"
 
 layer: "content"
 ops_class: "governance"
 
 epistemic_status: "CANONICAL"
+approved_by: "R@ (∇ Director)"
+approved_date: "2026-03-20"
 load_bearing: "structural"
 contagion: "downstream_total"
 
@@ -95,11 +98,14 @@ Authority must always be partitioned across:
 - Promotion
 
 No entity may hold all four functions simultaneously.
-⸻
+---
 
-2. Agent Classes (Role Taxonomy)
+## Section 2 — Agent Classes (Role Taxonomy)
 
-A. Synthetic Agents
+> **Provenance note (2026-03-20):** The original four synthetic agent classes (Candidate, Qualified, Red-Team, Evaluation Engine) were designed with MUSH interaction evaluation in mind. As the system expands to include governance Operators, infrastructure agents, and cross-vault coordination, the taxonomy may need revisiting to ensure these classes still map cleanly to all operational contexts. Flagged for awareness — no action required yet.
+> **review_by: 2026-06-20** — Assess whether the original four synthetic classes need expansion or refinement for non-MUSH operational contexts.
+
+### 2.A Synthetic Agents
 	1.	Candidate Agent
 	•	Under active stress evaluation
 	•	No corpus write privileges
@@ -117,6 +123,18 @@ A. Synthetic Agents
 	•	Non-authoring agent
 	•	Runs constraint and scoring logic only
 	•	No generative authority
+	5.	Operator Agent (Ω̂)
+	•	Task-scoped execution agent issued by the Chamber of Idioth Winds
+	•	Receives work orders with explicit mandate, constraints, and escalation path
+	•	May GENERATE artifacts within work order scope only
+	•	Cannot self-task, self-evaluate, self-promote, or expand own scope
+	•	Three lifecycle states: EPHEMERAL (dissolves on completion), SHELVED (serializes Mission Record for future rehydration), IDLE (parks with standing maintenance authority within mandate)
+	•	Default lifecycle is EPHEMERAL; SHELVED and IDLE require explicit Chamber designation
+	•	Authority is bounded by work order — tactical decisions (how to structure, ordering, formatting) permitted; strategic decisions (scope changes, priority shifts, resource commitments beyond mandate) prohibited
+	•	Escalation protocol: set block aside → complete safe work → escalate to lowest resolving rank → notify chain → R@ backstop
+	•	Identity: EPHEMERAL uses timestamp IDs (OP-YYYY-MM-DD-NNN), SHELVED/IDLE use domain routing keys (OP-MUSH, OP-INFRA, OP-LEG)
+	•	Full governance in AO_GOV_CHAMBER §V
+	•	**review_by: 2026-06-20** — Placeholder based on initial architectural design. Review after 90 days of operational use to assess: lifecycle state adequacy, escalation protocol effectiveness, privilege scoping, coordination model between parallel Operators.
 
 ### 2.4 Human Roles (FORMAL)
 
@@ -161,13 +179,15 @@ No silent authority.
 
 ---
 
-#### 2.4.2 Operator
+#### 2.4.2 Drill Master (Human)
 
-**Definition:**  
-Human responsible for executing AO_01 sessions.
+**Definition:**
+Human responsible for executing AO_01 evaluation sessions. Designs, configures, and runs stress-test drills against synthetic agents.
+
+> **Naming note:** Previously "Operator (Human)." Renamed to **Drill Master** to eliminate ambiguity with the synthetic Operator Agent (Ω̂) defined in §2.A.5. Rule: if you see "Operator" in a title anywhere in the AUPEI system, it refers to a synthetic Ω̂ task agent. The Drill Master runs evaluations; Operators execute work orders.
 
 **Privileges:**
-- Initiate sessions.
+- Initiate AO_01 evaluation sessions.
 - Configure injection parameters within allowed bounds.
 - Adjust difficulty and novelty ceilings.
 - Select evaluation profiles.
@@ -179,7 +199,7 @@ Human responsible for executing AO_01 sessions.
 - Cannot suppress FAIL events.
 - Cannot elevate agent class unilaterally.
 
-Operator authority is procedural, not epistemic.
+Drill Master authority is procedural, not epistemic.
 
 ---
 
@@ -220,7 +240,7 @@ Dual-role occupancy requires explicit temporary assignment with audit trail.
 ### 2.6 Acceptance Tests
 
 - Council overrides always produce override_event.
-- Operator cannot promote artifact.
+- Drill Master cannot promote artifact.
 - Archivist cannot modify content.
 - All human actions are traceable via event_hash.
 - Removal of logging triggers system failure.
@@ -411,12 +431,14 @@ All actions must emit an event record.
 | Qualified Agent | Yes | Yes | No | No | No |
 | Red-Team Agent | Yes | Yes | No | No | No |
 | Evaluation Engine | No | No | Yes | No | No |
-| Operator (Human) | No* | Yes | No | No | No |
+| Operator Agent (Ω̂) | Yes† | No | No | No | No |
+| Drill Master (Human) | No* | Yes | No | No | No |
 | Archivist (Human) | No | No | No | No | No |
 | Council / Founder (Adjudicator Hat) | No** | Yes | Yes*** | Yes | Yes |
 
-\* Operator may configure sessions but does not author corpus artifacts by default.  
-\** Council may author only under **Author Hat** (see 4.3). While wearing Author Hat, PROMOTE/ONTOLOGY_COMMIT are forbidden for that artifact.  
+\† Operator Agent (Ω̂) may GENERATE artifacts strictly within work order scope. Cannot generate outside mandate. Cannot self-task. Cannot evaluate or promote its own output. STRESS capability denied — Operators execute, they do not test.
+\* Drill Master (Human) may configure sessions but does not author corpus artifacts by default.
+\** Council may author only under **Author Hat** (see 4.3). While wearing Author Hat, PROMOTE/ONTOLOGY_COMMIT are forbidden for that artifact.
 \*** “EVALUATE” here means **adjudication over evaluation outputs**, not running the scoring logic.
 
 ---
@@ -650,7 +672,7 @@ Then:
 Human roles must declare:
 
 - actor_id
-- role (Council / Operator / Archivist)
+- role (Council / Drill Master / Archivist)
 - authority_scope
 - session_reference (if applicable)
 
@@ -865,3 +887,38 @@ AO_02 is functioning properly if:
 - Governance actions are auditable.
 - Promotion path remains procedural.
 - No recursive corruption emerges under stress testing.
+
+---
+
+## Section 9 — Review Schedule (GOVERNANCE HYGIENE)
+
+### 9.1 Purpose
+
+Policy documents, placeholder specifications, and provisional additions accumulate review debt. This section establishes a `review_by` mechanism to ensure the council revisits items on a predictable schedule rather than allowing them to drift.
+
+### 9.2 The `review_by` Pattern
+
+Any section, subsection, or inline specification within a governance document may carry a `review_by` tag:
+
+```
+**review_by: YYYY-MM-DD** — [Brief rationale for review. What to assess.]
+```
+
+Items with `review_by` dates are surfaced as **Old Business** in Chamber sessions (Phase 3) when the date arrives. The council disposes of each item: confirm, revise, extend, or remove.
+
+### 9.3 Rules
+
+- `review_by` is optional. Not every specification needs one.
+- Placeholder specifications (new roles, untested protocols, provisional additions) SHOULD carry a `review_by`.
+- The review date should be realistic — long enough for operational experience, short enough to prevent drift. 90 days is the default for new additions.
+- When a `review_by` item is reviewed, the council either removes the tag (specification is confirmed), updates it with a new date (needs more time), or revises the specification.
+- Overdue `review_by` items are flagged in the Chamber session agenda automatically.
+
+### 9.4 Current Review Items
+
+| Item | Location | Review By | Rationale |
+|------|----------|-----------|-----------|
+| Operator Agent (Ω̂) class | §2.A.5 | 2026-06-20 | New class based on architectural design. Assess lifecycle states, escalation protocol, privilege scoping, parallel coordination after 90 days of operational use. |
+| Original synthetic class taxonomy | §2.A.1–4 | 2026-06-20 | Classes designed for MUSH evaluation context. Assess fit for governance, infrastructure, and cross-vault operational contexts as system expands. |
+
+This table is maintained as items are added or resolved.
