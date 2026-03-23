@@ -8,7 +8,9 @@ author: "R@ / C@ the Red"
 entity: AUPEI
 vault: A
 layer: governance
-epistemic_status: PROPOSED
+epistemic_status: APPROVED
+approved_by: "R@ (∇ Director)"
+approved_date: "2026-03-21"
 load_bearing: true
 contagion: downstream_total
 tags: [governance, pentad, chamber, deliberation, protocol, operators, tasking]
