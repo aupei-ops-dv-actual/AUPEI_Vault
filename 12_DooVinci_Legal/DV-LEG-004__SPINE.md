@@ -37,10 +37,16 @@ severity_model:
 review_cadence: "Quarterly minimum; event-triggered on downstream node status change, entity status change, filing deadline, or Director request"
 closure_state: "OPEN"
 zeta_review:
-  status: "APPROVED"
-  date: "2026-03-20"
-  reviewer: "C@ the Red (ζ)"
-  notes: "Structurally sound. Severity model well-graduated. Contagion correctly decoupled from severity. Registry schema complete (12 fields). Bidirectional link rules enforce traceability. Ready for CONTENT population."
+  spine:
+    status: "APPROVED"
+    date: "2026-03-20"
+    reviewer: "C@ the Red (ζ)"
+    notes: "Structurally sound. Severity model well-graduated. Contagion correctly decoupled from severity. Registry schema complete (12 fields). Bidirectional link rules enforce traceability. Ready for CONTENT population."
+  content_skeleton:
+    status: "SKELETON_APPROVED"
+    date: "2026-03-24"
+    reviewer: "C@ the Red (ζ)"
+    notes: "CONTENT skeleton consistent with SPINE. All 12 section headers map to SPINE mandates. §8.5 Review Cadence added (was implicit in SPINE, now explicit in CONTENT). Ready for ξ population starting with §5 ACTIVE switches."
 ---
 
 # DV-LEG-004 — SPINE
