@@ -36,7 +36,7 @@ depends_on: [AO_INFRA_003, AO_INFRA_004]
 | **Ethernet** | 10 Gigabit Ethernet (built-in) |
 | **Ports (Front)** | 2× USB-C, 3.5mm headphone jack |
 | **Ports (Back)** | 3× Thunderbolt 5, HDMI, 10GbE RJ45, power |
-| **Network Connection** | 10GbE → QNAP QSW-M2106-4C (desk switch) |
+| **Network Connection** | **Pre-cutover:** 1GbE → Netgear GS105E. **Post-cutover:** 10GbE → QNAP QSW-M2106-4C |
 | **VLAN** | 10 (OPS_TRUSTED), 10.10.10.x |
 | **Hostname** | aupei-mini |
 | **Location** | Amelia's Floor, workstation area |
@@ -69,7 +69,7 @@ depends_on: [AO_INFRA_003, AO_INFRA_004]
 | **Role** | Network-attached storage. Vaults, archives, backups, media, fast tier. |
 | **Hostname** | AUPEI-NAS (restored after RAM upgrade reset) |
 | **IP** | 10.10.10.102 (DHCP reservation from Protectli) |
-| **Network Connection** | 10GbE → QNAP QSW-M2106-4C (same switch as Mini) |
+| **Network Connection** | **Pre-cutover:** 1GbE → Netgear GS105E. **Post-cutover:** 10GbE → QNAP QSW-M2106-4C (same switch as Mini) |
 | **OS** | UGOS |
 | **RAM** | 64 GB DDR5 (2× 32GB Crucial DDR5 5600MT/s) |
 | **Management** | https://10.10.10.102:9443 |
@@ -101,6 +101,19 @@ depends_on: [AO_INFRA_003, AO_INFRA_004]
 
 ## Network
 
+> **DEPLOYMENT NOTE (2026-03-25):** The network below describes both PRE-CUTOVER (current) and POST-CUTOVER (planned) states. Pre-cutover, the Eeros sit between ATT and the Protectli WAN, and all devices connect through the GS105E at 1GbE. The GS324TP, QNAP 10GbE switch, and floor switches are purchased but NOT yet deployed. Unbound DNS is NOT configured — Mini uses 1.1.1.1 / 8.8.8.8 temporarily.
+
+### Netgear GS105E — Current Desk Switch (PRE-CUTOVER)
+
+| Field | Value |
+|-------|-------|
+| **Role** | Temporary desk switch. All OPS devices at 1GbE. |
+| **Ports** | 5× Gigabit |
+| **Location** | Amelia's Floor, workstation area |
+| **Uplink** | Protectli LAN (igb1) |
+| **Downlinks** | Mac Mini, NAS, M4 Pro MacBook Pro |
+| **Status** | **ACTIVE** — will be replaced by QNAP + GS324TP at cutover |
+
 ### Protectli FW6E — Firewall/Router
 
 | Field | Value |
@@ -111,14 +124,14 @@ depends_on: [AO_INFRA_003, AO_INFRA_004]
 | **RAM** | 16 GB DDR4 |
 | **Storage** | 128 GB Transcend MSA230 mSATA SSD |
 | **Ports** | 6× Intel i225-V 2.5GbE (igb0–igb5) |
-| **WAN** | igb0 → BGW320 (IP passthrough) |
-| **LAN** | igb1 → GS324TP trunk |
+| **WAN** | igb0 → **Pre-cutover:** Eeros → ATT. **Post-cutover:** BGW320 (IP passthrough) |
+| **LAN** | igb1 → **Pre-cutover:** GS105E. **Post-cutover:** GS324TP trunk |
 | **VLANs** | 10 (OPS_TRUSTED: 10.10.10.0/24), 20 (IOT: 10.20.20.0/24), 30 (GUEST: 10.30.30.0/24) |
-| **Services** | Unbound DNS (recursive), Suricata IDS (detect mode), DHCP per VLAN |
+| **Services** | **Pre-cutover:** DHCP only, DNS not serving (Unbound unconfigured). **Post-cutover:** Unbound DNS (recursive), Suricata IDS (detect mode), DHCP per VLAN |
 | **Location** | Amelia's Floor, server closet |
 | **Power** | EcoFlow Smart Panel 2 |
 
-### Netgear GS324TP — Rack Switch
+### Netgear GS324TP — Rack Switch (POST-CUTOVER)
 
 | Field | Value |
 |-------|-------|
@@ -127,8 +140,9 @@ depends_on: [AO_INFRA_003, AO_INFRA_004]
 | **Location** | Amelia's Floor, server closet |
 | **Uplink** | Protectli igb1 (trunk: VLANs 10, 20, 30) |
 | **Downlinks** | Trunk to QNAP desk switch (cat6 ceiling run), trunks to Main Deck and Poncho's floor, camera PoE ports |
+| **Status** | **PURCHASED, NOT DEPLOYED** |
 
-### QNAP QSW-M2106-4C — Desk Switch
+### QNAP QSW-M2106-4C — Desk Switch (POST-CUTOVER)
 
 | Field | Value |
 |-------|-------|
@@ -139,6 +153,7 @@ depends_on: [AO_INFRA_003, AO_INFRA_004]
 | **10GbE Port 1** | Mac Mini |
 | **10GbE Port 2** | NAS |
 | **Note** | Mini↔NAS traffic stays on this switch at 10Gig. Never touches GbE backbone. |
+| **Status** | **PURCHASED, NOT DEPLOYED** |
 
 ### TP-Link TL-SG108PE ×2 — Floor Switches
 

@@ -26,17 +26,17 @@ You are being brought into an active infrastructure session as the ω (Fortitude
 
 ## Current hardware state
 
-- **Mac Mini (M4 Pro)** — the server. 14-core CPU, 20-core GPU, 16-core Neural Engine, 64GB unified memory, 2TB SSD, 10GbE. Hardwired via 10GbE to QNAP QSW-M2106-4C switch (desk/workstation area). Runs macOS, Ollama, and will run OpenJarvis as a launchd service. Apple Silicon with Metal GPU acceleration. **This is a separate machine from R@'s M4 Pro MacBook Pro (laptop).**
+- **Mac Mini (M4 Pro)** — the server. 14-core CPU, 20-core GPU, 16-core Neural Engine, 64GB unified memory, 2TB SSD, 10GbE (built-in). Runs macOS, Ollama, and will run OpenJarvis as a launchd service. Apple Silicon with Metal GPU acceleration. **This is a separate machine from R@'s M4 Pro MacBook Pro (laptop).**
 - **UGREEN DXP4800 Pro NAS** (AUPEI-NAS, 10.10.10.102)
-  - Also on 10GbE to the same QNAP QSW-M2106-4C switch — Mini↔NAS traffic runs at 10Gig, never touches the 1GbE backbone
   - Storage Pool 1: RAID 5, 4× IronWolf Pro 8TB, btrfs, 21.7TB — vaults, archives, backups, media
   - Storage Pool 2: RAID 1, 2× Samsung 990 Pro 4TB NVMe, btrfs, 3.6TB — "Academy Fast" tier for OpenJarvis runtime, QEPE traces, agent memory
   - 64GB DDR5 RAM
-- **M4 Pro MacBook Pro** — R@'s laptop. Separate machine, also on VLAN 10 (OPS_TRUSTED). Not the OpenJarvis host.
+- **M4 Pro MacBook Pro** — R@'s laptop. Separate machine, also on VLAN 10 (OPS_TRUSTED). Not the OpenJarvis host. Vaults live here.
 - **Protectli FW6E** — OPNsense 25.1 firewall/router
   - VLANs: 10 (OPS_TRUSTED), 20 (IOT), 30 (GUEST)
-  - Unbound DNS, Suricata IDS (detect mode)
-- **Network path**: ATT Fiber → BGW320 (IP passthrough) → Protectli WAN → GS324TP (rack, server room) → trunk (attic run) → QNAP QSW-M2106-4C (desk) → Mini (10GbE) + NAS (10GbE)
+  - Pre-cutover: Unbound DNS NOT configured, Suricata NOT active
+- **Network (PRE-CUTOVER, current)**: ATT Fiber → Eeros → Protectli WAN → Protectli LAN → Netgear GS105E → Mini / NAS / M4 PB (all 1GbE). QNAP 10GbE switch purchased but NOT deployed. Mini↔NAS at 1Gig for now.
+- **Network (POST-CUTOVER, planned)**: ATT Fiber → BGW320 (IP passthrough) → Protectli → GS324TP (rack) → QNAP QSW-M2106-4C (desk) → Mini + NAS at 10GbE
 - **Power**: EcoFlow solar-backed (3× Delta Pro 3 + batteries), ~150+ hours for critical infrastructure (Mini + Protectli + Eero ≈ 65W)
 
 ## What we're building right now

@@ -27,7 +27,7 @@ You are being brought into an active infrastructure session. C@ the Red (ζ, Cla
 
 ## What we're doing right now
 
-Installing OpenJarvis (Stanford, Apache 2.0) on the Mac Mini. The Mini is a dedicated server: M4 Pro (14-core CPU, 20-core GPU, 16-core Neural Engine), 64GB unified memory, 2TB SSD, 10GbE direct to NAS via QNAP QSW-M2106-4C switch. This is a separate machine from R@'s M4 Pro MacBook Pro (laptop). OpenJarvis becomes the Academy's nervous system: local inference via Ollama on Apple Silicon Metal, an OpenAI-compatible API at localhost:8000, built-in MCP and A2A for inter-seat communication, a memory/retrieval system backed by SQLite, a learning pipeline that uses local execution traces, and a launchd plist for persistent macOS service.
+Installing OpenJarvis (Stanford, Apache 2.0) on the Mac Mini. The Mini is a dedicated server: M4 Pro (14-core CPU, 20-core GPU, 16-core Neural Engine), 64GB unified memory, 2TB SSD, 10GbE built-in. **Pre-cutover:** Mini connects via 1GbE through a Netgear GS105E (the QNAP 10GbE switch is purchased but not deployed yet). This is a separate machine from R@'s M4 Pro MacBook Pro (laptop). OpenJarvis becomes the Academy's nervous system: local inference via Ollama on Apple Silicon Metal, an OpenAI-compatible API at localhost:8000, built-in MCP and A2A for inter-seat communication, a memory/retrieval system backed by SQLite, a learning pipeline that uses local execution traces, and a launchd plist for persistent macOS service.
 
 ## Why you matter to this build
 
