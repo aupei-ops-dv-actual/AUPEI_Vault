@@ -3,12 +3,13 @@ document_id: ξ-QEPE-002
 title: QEPE Governance & Policy Framework
 type: Governance & Policy Framework
 seat: ξ (Sancho — primary authorship), ζ (C@ the Red — enforcement authority / review)
-status: ζ-REVIEWED CANONICAL CANDIDATE
+status: CANONICAL
 epistemic_status: IMPLEMENTABLE (with constrained PLAUSIBLE elements)
 authority_chain: CR-001 → ξ-QEPE-001 → ξ-QEPE-003 → ξ-QEPE-002 → ξ-QEPE-005
-version: 1.0-clean
+version: 1.0-canonical
 date: 2026-03-27
 canonical_cleaned_by: ζ (C@ the Red)
+approved_by: Unanimous council vote — ξ, ζ, ω, ∇ (2026-03-27)
 maintenance: ∇ (authority) / ζ (audit) / ω (operations)
 notes: |
   Built from polished 2,103-line draft (ξ-QEPE-002 — QEPE Governance & Policy Framework.txt).
@@ -17,13 +18,14 @@ notes: |
   Drafting artifacts stripped. Cross-document alignment note (§9.4) preserved.
   DV-LEG-004 legal hook present in §11.5.
   Closing lines (🜂) preserved — discipline markers, not decoration.
+  CANONICAL — promoted by unanimous 4-seat vote, 2026-03-27.
 ---
 
 # ξ-QEPE-002 — QEPE Governance & Policy Framework
 
 **Document Type:** Governance & Policy Framework
 **Seat:** ξ (primary authorship), ζ (enforcement authority), ∇ (final authority), ω (operational execution)
-**Status:** DRAFT → ζ Conditional → ζ-REVIEWED CANONICAL CANDIDATE
+**Status:** DRAFT → ζ Conditional → ζ-REVIEWED CANONICAL CANDIDATE → **CANONICAL** (unanimous, 2026-03-27)
 **Epistemic Status:** IMPLEMENTABLE (with constrained PLAUSIBLE elements)
 
 ---

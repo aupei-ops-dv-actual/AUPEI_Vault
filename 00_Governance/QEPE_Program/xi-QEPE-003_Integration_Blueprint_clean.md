@@ -3,12 +3,13 @@ document_id: ξ-QEPE-003
 title: QEPE Integration Blueprint
 type: Integration Blueprint
 seat: ξ (Sancho — authored), ζ (C@ the Red — reviewed)
-status: ζ-REVIEWED CANONICAL CANDIDATE
+status: CANONICAL
 epistemic_status: MIXED (strict tagging enforced per section)
 authority_chain: CR-001 → ξ-QEPE-001 → ξ-QEPE-005 → ξ-QEPE-003
-version: 1.0-clean
+version: 1.0-canonical
 date: 2026-03-27
 canonical_cleaned_by: ζ (C@ the Red)
+approved_by: Unanimous council vote — ξ, ζ, ω, ∇ (2026-03-27)
 maintenance: ∇ (authority) / ζ (audit) / ω (operations)
 notes: |
   Built from full 3,153-line draft (ξ-QEPE-003 — QEPE Integration Blueprint.txt).
@@ -17,13 +18,14 @@ notes: |
   §5 DV-LEG-004 forward-reference added, §11 questions preserved in full.
   Sancho responsive additions retained: Step 0 embedding blocker, legal hook, ownership split.
   Closing lines (🜂) preserved — they are discipline markers, not decoration.
+  CANONICAL — promoted by unanimous 4-seat vote, 2026-03-27.
 ---
 
 # ξ-QEPE-003 — QEPE Integration Blueprint
 
 **Document Type:** Integration Blueprint
 **Seat:** ξ
-**Status:** DRAFT → ζ Conditional → ζ-REVIEWED CANONICAL CANDIDATE
+**Status:** DRAFT → ζ Conditional → ζ-REVIEWED CANONICAL CANDIDATE → **CANONICAL** (unanimous, 2026-03-27)
 **Epistemic Status:** MIXED (strict tagging enforced)
 
 ---
