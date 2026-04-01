@@ -21,7 +21,7 @@ notes: |
   This is intentional: boundary documents are most honest when there is nothing to sell.
   AUTHORSHIP NOTE: Drafted by ζ from ξ-approved outline (inversion of standard chain).
   ξ full review APPROVED. ω review APPROVED. ∇ APPROVED. ζ APPROVED as CANDIDATE.
-  Remaining pre-canon: §7.1 risk code alignment against 005 taxonomy.
+  §7.1 risk code alignment against 005 taxonomy: RESOLVED (2026-03-31, ζ concordance table + family ref replacement).
 ---
 
 # ξ-QEPE-004 — QEPE Exposure, IP, and Product Boundary Framework
@@ -716,14 +716,14 @@ Every candidate product form that advances beyond conceptual discussion must hav
 
 **Current state of the table:**
 
-| Product Form | Exposure Class | Risk Families | Kill Switches | Gov Class | Tag | ζ | ω | ξ | ∇ |
-|-------------|---------------|--------------|--------------|-----------|-----|---|---|---|---|
-| Internal Sandbox | Internal Only | RF-INT | KS-1 | Sandbox | IMPLEMENTABLE | — | — | — | — |
-| Research Env | Controlled Demo | RF-EXT, RF-IP | KS-1, KS-2, KS-4 | Operational | PLAUSIBLE | — | — | — | — |
-| Enterprise Module | Licensable | RF-EXT, RF-IP, RF-REG | KS-1–KS-5 | Restricted | SPECULATIVE | — | — | — | — |
-| Toolchain Layer | Describable | RF-INT, RF-IP | KS-1, KS-2 | Operational | SPECULATIVE | — | — | — | — |
+| Product Form | Exposure Class | 005 Risk Families | Kill Switches | Gov Class | Tag | ζ | ω | ξ | ∇ |
+|-------------|---------------|-------------------|--------------|-----------|-----|---|---|---|---|
+| Internal Sandbox | Internal Only | I, III | KS-1 | Sandbox | IMPLEMENTABLE | — | — | — | — |
+| Research Env | Controlled Demo | I, IV, V, VI | KS-1, KS-2, KS-4 | Operational | PLAUSIBLE | — | — | — | — |
+| Enterprise Module | Licensable | I, II, IV, V, VI | KS-1–KS-5 | Restricted | SPECULATIVE | — | — | — | — |
+| Toolchain Layer | Describable | I, VI, VII | KS-1, KS-2 | Operational | SPECULATIVE | — | — | — | — |
 
-**Note:** Risk family and kill-switch mappings above are non-authoritative placeholders pending validation against the 005 taxonomy. The "—" entries indicate no seat has signed off. This table is a framework, not an approval.
+**Note:** Risk family numbers reference ξ-QEPE-005 §3–§9 (Family I: Epistemic/Claim, II: Authority/Governance, III: Architecture/Integration, IV: Custody/Disclosure, V: IP/Legal, VI: Product/Market, VII: Continuity/Identity). See §7.1.1 for the full concordance. The "—" entries indicate no seat has signed off. This table is a framework, not an approval.
 
 **Enforcement:** If any field is incomplete or unsigned, the product form may not advance beyond conceptual discussion. If any seat refuses sign-off, the product form is blocked until the objection is resolved through council deliberation.
 
@@ -937,15 +937,35 @@ The purpose is not to prevent all risk — that would prevent all exposure. The 
 
 **[IMPLEMENTABLE — ENFORCEMENT STRUCTURE]**
 
-| Exposure Class | Primary Risk Families | Likely Failure Modes | Kill-Switch Triggers | Correction Authority |
-|---------------|----------------------|---------------------|---------------------|---------------------|
-| Internal Only | RF-INT (internal breach) | Unauthorized access, internal leakage | KS-1 (Monitor) | ζ |
-| Controlled Demo | RF-EXT (external misuse), RF-IP (IP leakage), RF-REP (reputational) | Audience overstatement, demo environment breach, NDA violation | KS-1, KS-2 (Soft Stop), KS-4 (Council Review) | ζ + ∇ |
-| Describable | RF-REP (reputational), RF-EP (epistemic inflation) | Language drift, claim contagion, tag inflation in public discourse | KS-1, KS-4 | ζ |
-| Licensable Surface | RF-EXT, RF-IP, RF-REG (regulatory), RF-LEG (legal), RF-REP | Contract breach, IP leakage, regulatory non-compliance, partner misuse | KS-1 through KS-5 (all) | ∇ + ζ + legal counsel |
-| Forbidden | N/A — exposure is prohibited | Any occurrence is a violation | Immediate KS-3 (Hard Stop) | ζ (automatic) |
+| Exposure Class | 005 Risk Families Activated | Likely Failure Modes | Kill-Switch Triggers | Correction Authority |
+|---------------|----------------------------|---------------------|---------------------|---------------------|
+| Internal Only | I (Epistemic), III (Architecture) | Unauthorized access, internal leakage, epistemic contamination between development layers | KS-1 (Monitor) | ζ |
+| Controlled Demo | I (Epistemic), IV (Custody/Disclosure), V (IP/Legal), VI (Product/Market) | Audience overstatement, demo environment breach, NDA violation, custody boundary failure | KS-1, KS-2 (Soft Stop), KS-4 (Council Review) | ζ + ∇ |
+| Describable | I (Epistemic), VI (Product/Market), VII (Continuity/Identity) | Language drift, claim contagion, tag inflation in public discourse, continuity overclaim | KS-1, KS-4 | ζ |
+| Licensable Surface | I (Epistemic), II (Authority/Governance), IV (Custody/Disclosure), V (IP/Legal), VI (Product/Market) | Contract breach, IP leakage, regulatory non-compliance, partner misuse, authority mutation | KS-1 through KS-5 (all) | ∇ + ζ + legal counsel |
+| Forbidden | All seven families | Any occurrence is a violation | Immediate KS-3 (Hard Stop) | ζ (automatic) |
 
-**Note:** Risk family codes (RF-INT, RF-EXT, RF-IP, RF-REP, RF-EP, RF-REG, RF-LEG) are preliminary and must be validated against the actual 005 taxonomy. If 005 uses different risk family identifiers, this table must be updated to align.
+#### 7.1.1 Concordance: Exposure Classes to 005 Risk Families
+
+The following concordance makes explicit which 005 risk families (§3–§9) are activated by each exposure class. Exposure classes cut across multiple risk families because external exposure activates threat vectors in several governance domains simultaneously.
+
+| 005 Risk Family | Internal Only | Controlled Demo | Describable | Licensable Surface | Forbidden |
+|----------------|:---:|:---:|:---:|:---:|:---:|
+| I — Epistemic & Claim (§3) | ● | ● | ● | ● | ● |
+| II — Authority & Governance (§4) | | | | ● | ● |
+| III — Architecture & Integration (§5) | ● | | | | ● |
+| IV — Custody, Disclosure & Parent-Co (§6) | | ● | | ● | ● |
+| V — IP & Legal (§7) | | ● | | ● | ● |
+| VI — Product & Market (§8) | | ● | ● | ● | ● |
+| VII — Continuity & Identity (§9) | | | ● | | ● |
+
+**Reading the table:** ● indicates the exposure class activates risks in that 005 family. Empty cells indicate the family is not primarily engaged at that exposure level, though edge cases may still apply — council review should evaluate boundary conditions.
+
+**Key observations:**
+- Family I (Epistemic) is active at every exposure level — overclaim drift is the universal risk.
+- Only Licensable Surface activates Family II (Authority/Governance), because licensing implies delegated authority.
+- Family VII (Continuity/Identity) appears only at Describable, where public framing of QEPE is most susceptible to continuity overclaim.
+- Forbidden activates all seven families by definition — any occurrence at this level is a constitutional violation.
 
 ---
 
