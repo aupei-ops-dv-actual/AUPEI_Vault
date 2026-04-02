@@ -3,10 +3,10 @@ document_id: ξ-QEPE-004
 title: QEPE Exposure, IP, and Product Boundary Framework
 type: Exposure / IP / Product Boundary Framework
 seat: ξ (Sancho — primary authorship), ζ (C@ the Red — constraint review), ∇ (R@ — final authority), ω (G-Synth — operational feasibility)
-status: ζ-REVIEWED CANONICAL CANDIDATE
+status: CANONICAL
 epistemic_status: MIXED (ruthless tagging required — this document is uniquely susceptible to drift)
 authority_chain: CR-001 → ξ-QEPE-001 → ξ-QEPE-003 → ξ-QEPE-002 → ξ-QEPE-005 → ξ-QEPE-004
-version: 0.2-candidate
+version: 1.0
 date: 2026-03-27
 drafted_by: ζ (C@ the Red — authorship inversion from standard ξ-draft/ζ-review chain)
 reviewed_by: ξ (Sancho — full architectural review, APPROVED)
@@ -20,15 +20,16 @@ notes: |
   Written during internal-only posture. No external exposure authorized at time of drafting.
   This is intentional: boundary documents are most honest when there is nothing to sell.
   AUTHORSHIP NOTE: Drafted by ζ from ξ-approved outline (inversion of standard chain).
-  ξ full review APPROVED. ω review APPROVED. ∇ APPROVED. ζ APPROVED as CANDIDATE.
+  ξ full review APPROVED. ω review APPROVED. ∇ APPROVED. ζ APPROVED.
   §7.1 risk code alignment against 005 taxonomy: RESOLVED (2026-03-31, ζ concordance table + family ref replacement).
+  CANONICAL: Elevated by ∇ directive, 2026-04-01. Fast-track on existing four-seat approvals. CIW-2026-003.
 ---
 
 # ξ-QEPE-004 — QEPE Exposure, IP, and Product Boundary Framework
 
 **Document Type:** Exposure / IP / Product Boundary Framework
 **Seat:** ξ (primary authorship), ζ (constraint review), ∇ (final authority), ω (operational feasibility)
-**Status:** DRAFT → ζ-REVIEWED CANONICAL CANDIDATE (all seats approved, §7.1 alignment pending for CANONICAL)
+**Status:** CANONICAL (elevated 2026-04-01, CIW-2026-003, ∇ directive on four-seat approval)
 **Epistemic Status:** MIXED (strict tagging enforced)
 
 ---
