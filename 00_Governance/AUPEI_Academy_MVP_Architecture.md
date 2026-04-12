@@ -1,4 +1,4 @@
----
+ ---
 node_id: AO_GOV_MVP
 title: "AUPEI Academy — MVP Architecture Vision"
 version: v1.0

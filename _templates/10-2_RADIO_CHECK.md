@@ -52,3 +52,9 @@ Keep it tight. No preamble.
 - Any seated agent should be able to respond to this without additional context.
 - If an agent cannot access its memory or the Prooffield, it should report YELLOW or RED with the reason.
 - R@ uses this for rapid alignment checks across all three vaults.
+
+## Cowork Skill
+
+A Cowork skill (`10-2-logbook`) extends this template with automated state gathering and persistent logbook append. When triggered in Cowork, the skill reads auto-memory, Daily Log, and workspace state before responding, then appends a timestamped entry to `IDIOTH_WINDS/AUPEI/10-2_LOGBOOK.md`. The logbook creates a searchable time-series of system state snapshots.
+
+The response format is the same. The skill adds the automation and persistence layer.
