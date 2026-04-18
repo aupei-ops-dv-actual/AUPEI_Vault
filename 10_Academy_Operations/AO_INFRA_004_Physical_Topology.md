@@ -22,6 +22,33 @@ all solar-backed, all surviving a grid outage or flood indefinitely.
 
 ---
 
+## CURRENT STATE — 2026-04-18 (Phase 1 cutover complete)
+
+Read this before assuming any "Pre-cutover / Post-cutover" marker below
+reflects what is actually plugged in right now. The "Logical Overlay on
+Physical" section is the TARGET state, not all of it has been built yet.
+
+**DONE (Phase 1, this session):**
+- Protectli FW6E physically relocated from desk → Amelia's server closet rack
+- Cabling: BGW320 LAN → Protectli igb0 (WAN); Protectli igb1 (LAN) → GS324TP
+- BGW320 IP Passthrough fixed (MAC was pinned to wrong device); WAN now lands
+  on public AT&T IP. Single NAT. BGW is a transparent bridge.
+- Whole house online via Protectli (cameras, NVR, Mini, NAS, MacBook, Eeros)
+
+**STILL PENDING (deferred to later sessions):**
+- Eero mesh is STILL in router mode → WiFi clients are double-NATted
+  (Protectli → Eero NAT). Bridge-mode flip not yet performed.
+- QNAP QSW-M2106-4C purchased, NOT deployed. Mini + NAS still on 1GbE.
+- GS324TP acts as a dumb switch; VLAN trunking not yet configured.
+- 2× TP-Link TL-SG108PE purchased, NOT installed. Old switches still in
+  Main Deck and Pancho's.
+- Per-VLAN firewall rules (10/20/30) not yet built.
+- Camera/NVR re-commissioning onto VLAN 20 not yet done.
+
+**Reference incident: ops_infra_change_2026-04-18_001.json**
+
+---
+
 ## Power Infrastructure (Solved)
 
 ```
@@ -67,7 +94,7 @@ Everything critical lives here. Own power. Own fiber. All cameras home here.
 │  │  Lorex NVR                    │                     │   └─10GbE to NAS  │
 │  │  weBoost cell booster         │                     │                    │
 │  │  5× coax (antenna TV)        │                     └────────────────────┘
-│  │  Eero node                    │
+│  │  (no Eero upstairs)           │
 │  │                                │
 │  │  ← 12 camera PoE runs home   │
 │  │     here to GS324TP          │
