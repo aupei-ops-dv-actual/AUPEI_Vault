@@ -1,0 +1,58 @@
+{
+  "version": "0.2",
+  "date": "2026-04-03",
+  "status": "partial",
+  "branches": {
+    "gfup_proofield": {
+      "3": "On Absolutely Something",
+      "4": "On Zero",
+      "5": "On Infinity",
+      "7": "On π",
+      "7a": "On c",
+      "7b": "On α",
+      "7c": "137 Proofs",
+      "7c.i": "Extended Notes",
+      "8": "On Time",
+      "9": "On Spatial Dimensionality",
+      "10": "A Hypothesis of Quantum Gravity",
+      "11": "Hamiltonian–Lagrangian Formulation",
+      "12": "Probabilistic Structure and Collapse Mechanics",
+      "13": "Dimensional Reduction of 7dU to General Relativity",
+      "14": "On Neutrinos",
+      "15": "Force Unification via Probabilistic Scaling",
+      "16": "Categorical Collapse Theorem 1",
+      "17": "The Linda Function",
+      "18": "Collapse Operator Formalism",
+      "19": "On Dark Geometry",
+      "20": "Proposed Experiments"
+    },
+    "field_atlas": {
+      "1": "On Absolute Absence (AA)",
+      "2": "On Absolutely Everything (AE)",
+      "3": "On Chance (ξ)",
+      "4": "On Zero (ζ)",
+      "5": "On Infinity (ω)",
+      "6": "On Pi / Neutrino Emergence",
+      "7": "On Time",
+      "8": "On Spatial Dimensionality",
+      "9": "On Absolutely Something (AS)",
+      "10": "Force Unification via Curvature",
+      "11": "Dimensional Reduction of 7dU to GR",
+      "12": "Dark Geometry and Expansion",
+      "13": "Emergence of Quantum Gravity",
+      "14": "Categorical Collapse Theorem (CCT-1)",
+      "15": "Collapse Operator: Formalism & Functions",
+      "16": "On Black Holes and Singularity Collapse",
+      "17": "On Higgs Field and Mass Emergence",
+      "18": "On Measurement and Observer Collapse",
+      "19": "On Computational Hell & Collapse Consequences",
+      "20": "On Ethical Geometry / Algorithm of Morality",
+      "21": "On Trans-Reductionism and Epistemology",
+      "22": "Proposed Experiments"
+    }
+  },
+  "notes": [
+    "This is a fork-preserving concordance, not a flattening pass.",
+    "Early appendices 1-9 remain partially unresolved in GFUP/Proofield due to incomplete low-number recovery."
+  ]
+}

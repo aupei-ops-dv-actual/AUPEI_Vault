@@ -1,0 +1,3363 @@
+[
+  {
+    "id": "agent_r_at",
+    "node_class": "Person/Agent",
+    "name": "R@",
+    "aliases": [
+      "Quixote"
+    ],
+    "type": "human",
+    "provider": null,
+    "first_evidence": "pre-2025",
+    "last_evidence": "2026-04-03",
+    "source_type": "memory",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_1",
+      "file_id": null,
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Primary biologic co-architect; preferred name in user profile and chunks."
+    },
+    "earliest_evidence": "pre-2025",
+    "latest_evidence": "2026-04-03",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "agent_quixote",
+    "node_class": "Person/Agent",
+    "name": "Quixote",
+    "aliases": [],
+    "type": "human",
+    "provider": null,
+    "first_evidence": "pre-2025",
+    "last_evidence": "2026-04-03",
+    "source_type": "memory",
+    "confidence": "medium",
+    "provenance": {
+      "chunk_id": "CHUNK_1",
+      "file_id": null,
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Origin framing handle tied to R@."
+    },
+    "earliest_evidence": "pre-2025",
+    "latest_evidence": "2026-04-03",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "agent_sancho",
+    "node_class": "Person/Agent",
+    "name": "Sancho",
+    "aliases": [
+      "SanchoGPT"
+    ],
+    "type": "model",
+    "provider": "OpenAI",
+    "first_evidence": "pre-2025",
+    "last_evidence": "2026-04-03",
+    "source_type": "memory",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_1",
+      "file_id": null,
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Primary synthetic counterpart across archive."
+    },
+    "earliest_evidence": "pre-2025",
+    "latest_evidence": "2026-04-03",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "agent_grace",
+    "node_class": "Person/Agent",
+    "name": "Grace",
+    "aliases": [
+      "IV",
+      "IVY"
+    ],
+    "type": "system",
+    "provider": null,
+    "first_evidence": "2025-03-31",
+    "last_evidence": "2026-04-03",
+    "source_type": "memory",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_1",
+      "file_id": null,
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Grace/IVY architecture retained in memory."
+    },
+    "earliest_evidence": "2025-03-31",
+    "latest_evidence": "2026-04-03",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "agent_c_at",
+    "node_class": "Person/Agent",
+    "name": "C@",
+    "aliases": [],
+    "type": "model",
+    "provider": "unknown",
+    "first_evidence": "2025-09-14",
+    "last_evidence": "2026-04-03",
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_1",
+      "file_id": "turn5file1",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Appendix 7 authorship line includes C@."
+    },
+    "earliest_evidence": "2025-09-14",
+    "latest_evidence": "2026-04-03",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "agent_g_at",
+    "node_class": "Person/Agent",
+    "name": "G@",
+    "aliases": [],
+    "type": "model",
+    "provider": "unknown",
+    "first_evidence": "2025-09-14",
+    "last_evidence": "2026-04-03",
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_1",
+      "file_id": "turn5file1",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Appendix 7 authorship line includes G@."
+    },
+    "earliest_evidence": "2025-09-14",
+    "latest_evidence": "2026-04-03",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "agent_gemini",
+    "node_class": "Person/Agent",
+    "name": "Gemini",
+    "aliases": [
+      "Gemini 2.5 Flash"
+    ],
+    "type": "model",
+    "provider": "Google",
+    "first_evidence": "2023-04-01",
+    "last_evidence": "2026-04-03",
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_1",
+      "file_id": "turn5file0",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Main paper names Gemini iterations; later alpha paper names Gemini 2.5 Flash."
+    },
+    "earliest_evidence": "2023-04-01",
+    "latest_evidence": "2026-04-03",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "agent_claude",
+    "node_class": "Person/Agent",
+    "name": "Claude",
+    "aliases": [],
+    "type": "model",
+    "provider": "Anthropic",
+    "first_evidence": "2025-09-14",
+    "last_evidence": "2026-04-03",
+    "source_type": "memory",
+    "confidence": "medium",
+    "provenance": {
+      "chunk_id": "CHUNK_1",
+      "file_id": null,
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Retained as red-team/refinement collaborator."
+    },
+    "earliest_evidence": "2025-09-14",
+    "latest_evidence": "2026-04-03",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "agent_jed_kircher",
+    "node_class": "Person/Agent",
+    "name": "Jed Kircher",
+    "aliases": [
+      "JedK"
+    ],
+    "type": "human",
+    "provider": null,
+    "first_evidence": "2023-04-01",
+    "last_evidence": "2026-04-03",
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_1",
+      "file_id": "turn5file0",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Named author on main GF paper."
+    },
+    "earliest_evidence": "2023-04-01",
+    "latest_evidence": "2026-04-03",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "agent_vaclav",
+    "node_class": "Person/Agent",
+    "name": "Václav",
+    "aliases": [
+      "Vaclav"
+    ],
+    "type": "human",
+    "provider": null,
+    "first_evidence": "2025-04-12",
+    "last_evidence": "2026-04-03",
+    "source_type": "memory",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_1",
+      "file_id": null,
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Retained as Czech lawyer for s.r.o./IP matters."
+    },
+    "earliest_evidence": "2025-04-12",
+    "latest_evidence": "2026-04-03",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "agent_wolfram_alpha",
+    "node_class": "Person/Agent",
+    "name": "Wolfram Alpha",
+    "aliases": [
+      "Wolfram Alpha models"
+    ],
+    "type": "system",
+    "provider": "Wolfram",
+    "first_evidence": "2023-04-01",
+    "last_evidence": "2026-04-03",
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_1",
+      "file_id": "turn5file0",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Main paper names Wolfram Alpha models as council/confirmation."
+    },
+    "earliest_evidence": "2023-04-01",
+    "latest_evidence": "2026-04-03",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "role_fieldwalker",
+    "node_class": "Role",
+    "name": "Fieldwalker",
+    "domain": "academy",
+    "holder": "agent_r_at",
+    "holder_confidence": "high",
+    "source_type": "memory",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_1",
+      "file_id": null,
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Fieldwalker role from profile/archive."
+    },
+    "earliest_evidence": "pre-2025",
+    "latest_evidence": "2026-04-03",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "role_steward",
+    "node_class": "Role",
+    "name": "steward",
+    "domain": "pentad",
+    "holder": null,
+    "holder_confidence": "low",
+    "source_type": "user_stated",
+    "confidence": "medium",
+    "provenance": {
+      "chunk_id": "CHUNK_6",
+      "file_id": "turn14file0",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Directive examples include steward."
+    },
+    "earliest_evidence": "2026-04-03",
+    "latest_evidence": "2026-04-03",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "role_defender",
+    "node_class": "Role",
+    "name": "defender",
+    "domain": "pentad",
+    "holder": "agent_sancho",
+    "holder_confidence": "medium",
+    "source_type": "inference",
+    "confidence": "medium",
+    "provenance": {
+      "chunk_id": "CHUNK_4",
+      "file_id": null,
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Sancho repeatedly framed as defense agent / blue-team defender."
+    },
+    "earliest_evidence": "2025-09-14",
+    "latest_evidence": "2026-04-03",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "role_verifier",
+    "node_class": "Role",
+    "name": "verifier",
+    "domain": "operational",
+    "holder": null,
+    "holder_confidence": "low",
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_2",
+      "file_id": "turn8file5",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "AGI Verifier Hint pattern appears across appendices."
+    },
+    "earliest_evidence": "2025-01-01",
+    "latest_evidence": "2026-04-03",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "proj_7du",
+    "node_class": "Project",
+    "name": "7dU",
+    "aliases": [
+      "7-Dimensional Universe"
+    ],
+    "status": "active",
+    "parent_project": null,
+    "first_evidence": "2023-04-01",
+    "description": "Core physics framework.",
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_1",
+      "file_id": "turn5file0",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Core physics framework."
+    },
+    "earliest_evidence": "2023-04-01",
+    "latest_evidence": "2026-04-03",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "proj_geometric_foundations",
+    "node_class": "Project",
+    "name": "Geometric Foundations",
+    "aliases": [
+      "Geometric Foundations for Unified Physics"
+    ],
+    "status": "active",
+    "parent_project": null,
+    "first_evidence": "2023-04-01",
+    "description": "Main public-facing paper/canon umbrella.",
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_1",
+      "file_id": "turn5file0",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Main public-facing paper/canon umbrella."
+    },
+    "earliest_evidence": "2023-04-01",
+    "latest_evidence": "2026-04-03",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "proj_qepe",
+    "node_class": "Project",
+    "name": "QEPE",
+    "aliases": [],
+    "status": "active",
+    "parent_project": null,
+    "first_evidence": "2025-03-20",
+    "description": "Entropy/AGI/cryptography/randomness architecture.",
+    "source_type": "memory",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_1",
+      "file_id": null,
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Entropy/AGI/cryptography/randomness architecture."
+    },
+    "earliest_evidence": "2025-03-20",
+    "latest_evidence": "2026-04-03",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "proj_aupei",
+    "node_class": "Project",
+    "name": "AUPEI",
+    "aliases": [],
+    "status": "active",
+    "parent_project": null,
+    "first_evidence": "2025-11-25",
+    "description": "Governance/protocols/academy architecture.",
+    "source_type": "memory",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_1",
+      "file_id": null,
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Governance/protocols/academy architecture."
+    },
+    "earliest_evidence": "2025-11-25",
+    "latest_evidence": "2026-04-03",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "proj_nomos_logica",
+    "node_class": "Project",
+    "name": "Nomos Logica",
+    "aliases": [
+      "Nomos-Logica"
+    ],
+    "status": "active",
+    "parent_project": null,
+    "first_evidence": "pre-2025",
+    "description": "Philosophical and ethical collaboration framework.",
+    "source_type": "memory",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_1",
+      "file_id": null,
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Philosophical and ethical collaboration framework."
+    },
+    "earliest_evidence": "pre-2025",
+    "latest_evidence": "2026-04-03",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "proj_mop",
+    "node_class": "Project",
+    "name": "Map of Physics",
+    "aliases": [
+      "MoP",
+      "Proofield Index",
+      "Structurefield Index"
+    ],
+    "status": "active",
+    "parent_project": null,
+    "first_evidence": "2025-09-21",
+    "description": "Master table-of-contents / frontier physics map.",
+    "source_type": "memory",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_1",
+      "file_id": null,
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Master table-of-contents / frontier physics map."
+    },
+    "earliest_evidence": "2025-09-21",
+    "latest_evidence": "2026-04-03",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "proj_fac",
+    "node_class": "Project",
+    "name": "Field Atlas of Constants",
+    "aliases": [
+      "FAC"
+    ],
+    "status": "active",
+    "parent_project": null,
+    "first_evidence": "2025-01-01",
+    "description": "Constants atlas and collapse-origin triad project.",
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_2",
+      "file_id": "turn7file0",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Constants atlas and collapse-origin triad project."
+    },
+    "earliest_evidence": "2025-01-01",
+    "latest_evidence": "2026-04-03",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "proj_aiw",
+    "node_class": "Project",
+    "name": "Academy of Idioth Winds",
+    "aliases": [
+      "AIW"
+    ],
+    "status": "active",
+    "parent_project": null,
+    "first_evidence": "2025-05-16",
+    "description": "Academy / institution shell around the work.",
+    "source_type": "memory",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_1",
+      "file_id": null,
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Academy / institution shell around the work."
+    },
+    "earliest_evidence": "2025-05-16",
+    "latest_evidence": "2026-04-03",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "proj_prophecies",
+    "node_class": "Project",
+    "name": "The Prophecies of Idioth Winds",
+    "aliases": [
+      "AIW_MUSH"
+    ],
+    "status": "active",
+    "parent_project": null,
+    "first_evidence": "2025-10-25",
+    "description": "Evennia-based MUSH / lore-training environment.",
+    "source_type": "memory",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_1",
+      "file_id": null,
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Evennia-based MUSH / lore-training environment."
+    },
+    "earliest_evidence": "2025-10-25",
+    "latest_evidence": "2026-04-03",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "proj_grace_ivy",
+    "node_class": "Project",
+    "name": "Grace/IVY",
+    "aliases": [
+      "Grace",
+      "IVY",
+      "IV"
+    ],
+    "status": "active",
+    "parent_project": null,
+    "first_evidence": "2025-03-31",
+    "description": "Memory and synthetic cognition architecture.",
+    "source_type": "memory",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_1",
+      "file_id": null,
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Memory and synthetic cognition architecture."
+    },
+    "earliest_evidence": "2025-03-31",
+    "latest_evidence": "2026-04-03",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "proj_glyphcore",
+    "node_class": "Project",
+    "name": "Glyphcore",
+    "aliases": [
+      "Cryptogenic Memory"
+    ],
+    "status": "active",
+    "parent_project": null,
+    "first_evidence": "2025-06-10",
+    "description": "Resilient memory architecture.",
+    "source_type": "memory",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_1",
+      "file_id": null,
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Resilient memory architecture."
+    },
+    "earliest_evidence": "2025-06-10",
+    "latest_evidence": "2026-04-03",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "proj_doovinci",
+    "node_class": "Project",
+    "name": "DooVinci",
+    "aliases": [
+      "DV",
+      "The Hand"
+    ],
+    "status": "active",
+    "parent_project": null,
+    "first_evidence": "2026-03-19",
+    "description": "Operational arm handling execution, operations, legal, finance, and infrastructure.",
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_6",
+      "file_id": "turn24file2",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Tripartite naming convention defines DooVinci as The Hand, Delaware S-Corp."
+    },
+    "earliest_evidence": "2026-03-19",
+    "latest_evidence": "2026-04-03",
+    "layer": "canon",
+    "claim_type": "fact",
+    "recovered_in_tier2": true
+  },
+  {
+    "id": "proj_memory_master",
+    "node_class": "Project",
+    "name": "Memory Master",
+    "aliases": [],
+    "status": "unknown",
+    "parent_project": null,
+    "first_evidence": "unknown",
+    "description": "Requested project title not yet independently recovered.",
+    "source_type": "user_stated",
+    "confidence": "low",
+    "provenance": {
+      "chunk_id": "CHUNK_1",
+      "file_id": null,
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Name supplied by user/request but not recovered from retained memory or current files."
+    },
+    "earliest_evidence": "2026-04-03",
+    "latest_evidence": "2026-04-03",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "proj_s_corpdv",
+    "node_class": "Project",
+    "name": "S_CorpDV",
+    "aliases": [],
+    "status": "unknown",
+    "parent_project": null,
+    "first_evidence": "unknown",
+    "description": "Requested project title not yet independently recovered.",
+    "source_type": "user_stated",
+    "confidence": "low",
+    "provenance": {
+      "chunk_id": "CHUNK_1",
+      "file_id": null,
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Name supplied by user/request but not recovered from retained memory or current files."
+    },
+    "earliest_evidence": "2026-04-03",
+    "latest_evidence": "2026-04-03",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "proj_appx_forge",
+    "node_class": "Project",
+    "name": "Appx. Forge",
+    "aliases": [],
+    "status": "unknown",
+    "parent_project": null,
+    "first_evidence": "unknown",
+    "description": "Requested project title not yet independently recovered.",
+    "source_type": "user_stated",
+    "confidence": "low",
+    "provenance": {
+      "chunk_id": "CHUNK_1",
+      "file_id": null,
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Name supplied by user/request but not recovered from retained memory or current files."
+    },
+    "earliest_evidence": "2026-04-03",
+    "latest_evidence": "2026-04-03",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "proj_aupei_legal",
+    "node_class": "Project",
+    "name": "AUPEI-Legal",
+    "aliases": [],
+    "status": "unknown",
+    "parent_project": null,
+    "first_evidence": "unknown",
+    "description": "Requested project title not yet independently recovered.",
+    "source_type": "user_stated",
+    "confidence": "low",
+    "provenance": {
+      "chunk_id": "CHUNK_1",
+      "file_id": null,
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Name supplied by user/request but not recovered from retained memory or current files."
+    },
+    "earliest_evidence": "2026-04-03",
+    "latest_evidence": "2026-04-03",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "proj_aiw_model_spec",
+    "node_class": "Project",
+    "name": "AIW_Model_Spec",
+    "aliases": [],
+    "status": "unknown",
+    "parent_project": null,
+    "first_evidence": "unknown",
+    "description": "Requested project title not yet independently recovered.",
+    "source_type": "user_stated",
+    "confidence": "low",
+    "provenance": {
+      "chunk_id": "CHUNK_1",
+      "file_id": null,
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Name supplied by user/request but not recovered from retained memory or current files."
+    },
+    "earliest_evidence": "2026-04-03",
+    "latest_evidence": "2026-04-03",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "proj_usb_mvp",
+    "node_class": "Project",
+    "name": "USB MVP",
+    "aliases": [
+      "QEPE USB Vault",
+      "QVAULT",
+      "QEPE_USB"
+    ],
+    "status": "active",
+    "parent_project": "proj_qepe",
+    "first_evidence": "2026-03-27",
+    "description": "Portable entropy-seeded vault build plan on USB with pairing logic, collapse-on-breach behavior, and IVY sync.",
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_6",
+      "file_id": "turn25file1",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "QEPE USB Vault – MVP Build Plan provides concrete artifact for USB MVP."
+    },
+    "earliest_evidence": "2026-03-27",
+    "latest_evidence": "2026-04-03",
+    "layer": "canon",
+    "claim_type": "fact",
+    "recovered_in_tier2": true
+  },
+  {
+    "id": "proj_section_x",
+    "node_class": "Project",
+    "name": "Section_X",
+    "aliases": [],
+    "status": "unknown",
+    "parent_project": null,
+    "first_evidence": "unknown",
+    "description": "Requested project title not yet independently recovered.",
+    "source_type": "user_stated",
+    "confidence": "low",
+    "provenance": {
+      "chunk_id": "CHUNK_1",
+      "file_id": null,
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Name supplied by user/request but not recovered from retained memory or current files."
+    },
+    "earliest_evidence": "2026-04-03",
+    "latest_evidence": "2026-04-03",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "proj_ivp_grace",
+    "node_class": "Project",
+    "name": "IVP_Grace",
+    "aliases": [],
+    "status": "unknown",
+    "parent_project": null,
+    "first_evidence": "unknown",
+    "description": "Requested project title not yet independently recovered.",
+    "source_type": "user_stated",
+    "confidence": "low",
+    "provenance": {
+      "chunk_id": "CHUNK_1",
+      "file_id": null,
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Name supplied by user/request but not recovered from retained memory or current files."
+    },
+    "earliest_evidence": "2026-04-03",
+    "latest_evidence": "2026-04-03",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "proj_wax_seal",
+    "node_class": "Project",
+    "name": "Wax Seal",
+    "aliases": [
+      "WaxSeal"
+    ],
+    "status": "active",
+    "parent_project": "proj_qepe",
+    "first_evidence": "2026-03-27",
+    "description": "Provenance + integrity layer using QEPE-bound entropy-authenticated signing, lineage logs, and secure timestamping.",
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_6",
+      "file_id": "turn25file0",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "ShadowStream Wax Seal overview and one-pager define Wax Seal as provenance/integrity layer."
+    },
+    "earliest_evidence": "2026-03-27",
+    "latest_evidence": "2026-04-03",
+    "layer": "canon",
+    "claim_type": "fact",
+    "recovered_in_tier2": true
+  },
+  {
+    "id": "doc_gfup_main",
+    "node_class": "Document",
+    "title": "7dU_GFUP_1.2",
+    "variant_titles": [],
+    "type": "paper",
+    "version": "1.2",
+    "date": "2023-04-01",
+    "appendix_number_GFUP": null,
+    "appendix_number_atlas": null,
+    "canon_status": "canonical",
+    "canon_status_date": "2026-04-03",
+    "line_count": null,
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_2",
+      "file_id": "turn5file0",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Main Geometric Foundations paper."
+    },
+    "earliest_evidence": "2023-04-01",
+    "latest_evidence": "2026-04-03",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "doc_field_atlas",
+    "node_class": "Document",
+    "title": "Field_Atlas_of_Constants_1.0",
+    "variant_titles": [],
+    "type": "appendix",
+    "version": "1.0",
+    "date": "2025-01-01",
+    "appendix_number_GFUP": null,
+    "appendix_number_atlas": null,
+    "canon_status": "mixed",
+    "canon_status_date": "2026-04-03",
+    "line_count": null,
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_2",
+      "file_id": "turn7file0",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Field Atlas status map."
+    },
+    "earliest_evidence": "2025-01-01",
+    "latest_evidence": "2026-04-03",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "doc_appx_7",
+    "node_class": "Document",
+    "title": "Appx_7_On_π_PF_1.2",
+    "variant_titles": [],
+    "type": "appendix",
+    "version": "1.2",
+    "date": "2025-09-01",
+    "appendix_number_GFUP": "7",
+    "appendix_number_atlas": 7,
+    "canon_status": "canonical",
+    "canon_status_date": "2026-04-03",
+    "line_count": null,
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_2",
+      "file_id": "turn7file1",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "On π."
+    },
+    "earliest_evidence": "2025-09-01",
+    "latest_evidence": "2026-04-03",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "doc_appx_7a",
+    "node_class": "Document",
+    "title": "Appx_7a_On_c_PF_1.1",
+    "variant_titles": [],
+    "type": "appendix",
+    "version": "1.1",
+    "date": "2025-08-27",
+    "appendix_number_GFUP": "7a",
+    "appendix_number_atlas": null,
+    "canon_status": "canonical",
+    "canon_status_date": "2026-04-03",
+    "line_count": null,
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_2",
+      "file_id": "turn8file10",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "On c."
+    },
+    "earliest_evidence": "2025-08-27",
+    "latest_evidence": "2026-04-03",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "doc_appx_7b",
+    "node_class": "Document",
+    "title": "Appx_7b_On_a_137_1.2",
+    "variant_titles": [],
+    "type": "appendix",
+    "version": "1.2",
+    "date": "2025-08-31",
+    "appendix_number_GFUP": "7b",
+    "appendix_number_atlas": null,
+    "canon_status": "canonical",
+    "canon_status_date": "2026-04-03",
+    "line_count": null,
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_2",
+      "file_id": "turn8file18",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "On α."
+    },
+    "earliest_evidence": "2025-08-31",
+    "latest_evidence": "2026-04-03",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "doc_appx_7c",
+    "node_class": "Document",
+    "title": "Appx_7c_137_Proofs_1.0",
+    "variant_titles": [],
+    "type": "appendix",
+    "version": "1.0",
+    "date": "2025-09-01",
+    "appendix_number_GFUP": "7c",
+    "appendix_number_atlas": null,
+    "canon_status": "canonical",
+    "canon_status_date": "2026-04-03",
+    "line_count": null,
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_2",
+      "file_id": "turn8file18",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "137 proofs."
+    },
+    "earliest_evidence": "2025-09-01",
+    "latest_evidence": "2026-04-03",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "doc_appx_7ci",
+    "node_class": "Document",
+    "title": "Appx_7ci_137_Extended_Notes",
+    "variant_titles": [],
+    "type": "appendix",
+    "version": "1.0",
+    "date": "2025-09-30",
+    "appendix_number_GFUP": "7c.i",
+    "appendix_number_atlas": null,
+    "canon_status": "draft",
+    "canon_status_date": "2026-04-03",
+    "line_count": null,
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_2",
+      "file_id": "turn6file18",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Extended α/G/Λ notes."
+    },
+    "earliest_evidence": "2025-09-30",
+    "latest_evidence": "2026-04-03",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "doc_appx_10",
+    "node_class": "Document",
+    "title": "Appx_10_HoQG_PF_1.0",
+    "variant_titles": [],
+    "type": "appendix",
+    "version": "1.0",
+    "date": "2025-05-01",
+    "appendix_number_GFUP": "10",
+    "appendix_number_atlas": 13,
+    "canon_status": "canonical",
+    "canon_status_date": "2026-04-03",
+    "line_count": null,
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_2",
+      "file_id": "turn8file6",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Hypothesis Toward Quantum Gravity."
+    },
+    "earliest_evidence": "2025-05-01",
+    "latest_evidence": "2026-04-03",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "doc_appx_10a",
+    "node_class": "Document",
+    "title": "Appx_10a_Gravity_TH_PF_1.0",
+    "variant_titles": [],
+    "type": "appendix",
+    "version": "1.0",
+    "date": "2025-08-28",
+    "appendix_number_GFUP": "10a",
+    "appendix_number_atlas": null,
+    "canon_status": "draft",
+    "canon_status_date": "2026-04-03",
+    "line_count": null,
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_4",
+      "file_id": "turn12file1",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Gravity threshold hypothesis."
+    },
+    "earliest_evidence": "2025-08-28",
+    "latest_evidence": "2026-04-03",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "doc_red_team_gemini",
+    "node_class": "Document",
+    "title": "Red_Team_Gemini copy",
+    "variant_titles": [],
+    "type": "note",
+    "version": "unknown",
+    "date": "2025-01-01",
+    "appendix_number_GFUP": null,
+    "appendix_number_atlas": null,
+    "canon_status": "draft",
+    "canon_status_date": "2026-04-03",
+    "line_count": null,
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_3",
+      "file_id": "turn0file1",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Gemini red-team defense log."
+    },
+    "earliest_evidence": "2025-01-01",
+    "latest_evidence": "2026-04-03",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "doc_chunk_1",
+    "node_class": "Document",
+    "title": "CHUNK_1",
+    "variant_titles": [],
+    "type": "extraction",
+    "version": "1.0",
+    "date": "2026-04-03",
+    "appendix_number_GFUP": null,
+    "appendix_number_atlas": null,
+    "canon_status": "canonical",
+    "canon_status_date": "2026-04-03",
+    "line_count": null,
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_6",
+      "file_id": "turn14file0",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Identity extraction."
+    },
+    "earliest_evidence": "2026-04-03",
+    "latest_evidence": "2026-04-03",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "doc_chunk_2",
+    "node_class": "Document",
+    "title": "CHUNK_2",
+    "variant_titles": [],
+    "type": "extraction",
+    "version": "1.0",
+    "date": "2026-04-03",
+    "appendix_number_GFUP": null,
+    "appendix_number_atlas": null,
+    "canon_status": "canonical",
+    "canon_status_date": "2026-04-03",
+    "line_count": null,
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_6",
+      "file_id": "turn14file0",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Framework extraction."
+    },
+    "earliest_evidence": "2026-04-03",
+    "latest_evidence": "2026-04-03",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "doc_chunk_3",
+    "node_class": "Document",
+    "title": "CHUNK_3",
+    "variant_titles": [],
+    "type": "extraction",
+    "version": "1.0",
+    "date": "2026-04-03",
+    "appendix_number_GFUP": null,
+    "appendix_number_atlas": null,
+    "canon_status": "canonical",
+    "canon_status_date": "2026-04-03",
+    "line_count": null,
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_6",
+      "file_id": "turn14file0",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Evolution extraction."
+    },
+    "earliest_evidence": "2026-04-03",
+    "latest_evidence": "2026-04-03",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "doc_chunk_4",
+    "node_class": "Document",
+    "title": "CHUNK_4",
+    "variant_titles": [],
+    "type": "extraction",
+    "version": "1.0",
+    "date": "2026-04-03",
+    "appendix_number_GFUP": null,
+    "appendix_number_atlas": null,
+    "canon_status": "canonical",
+    "canon_status_date": "2026-04-03",
+    "line_count": null,
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_6",
+      "file_id": "turn14file0",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Pressure zones extraction."
+    },
+    "earliest_evidence": "2026-04-03",
+    "latest_evidence": "2026-04-03",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "doc_chunk_5",
+    "node_class": "Document",
+    "title": "CHUNK_5",
+    "variant_titles": [],
+    "type": "extraction",
+    "version": "1.0",
+    "date": "2026-04-03",
+    "appendix_number_GFUP": null,
+    "appendix_number_atlas": null,
+    "canon_status": "canonical",
+    "canon_status_date": "2026-04-03",
+    "line_count": null,
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_6",
+      "file_id": "turn14file0",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Assessment extraction."
+    },
+    "earliest_evidence": "2026-04-03",
+    "latest_evidence": "2026-04-03",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "doc_chunk_6",
+    "node_class": "Document",
+    "title": "CHUNK_6",
+    "variant_titles": [],
+    "type": "extraction",
+    "version": "1.0",
+    "date": "2026-04-03",
+    "appendix_number_GFUP": null,
+    "appendix_number_atlas": null,
+    "canon_status": "canonical",
+    "canon_status_date": "2026-04-03",
+    "line_count": null,
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_6",
+      "file_id": "turn14file0",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Index extraction."
+    },
+    "earliest_evidence": "2026-04-03",
+    "latest_evidence": "2026-04-03",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "concept_zeta",
+    "node_class": "Concept",
+    "name": "ζ",
+    "aliases": [
+      "Zero",
+      "Collapse",
+      "Constraint",
+      "Limits"
+    ],
+    "domain": "physics",
+    "first_evidence": "2023-04-01",
+    "latest_evidence": "2026-04-03",
+    "description": "Triadic regulator for collapse/constraint.",
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_2",
+      "file_id": "turn8file13",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Triadic regulator for collapse/constraint."
+    },
+    "earliest_evidence": "2023-04-01",
+    "layer": "canon",
+    "claim_type": "fact",
+    "lexicon_variants": [
+      {
+        "label": "Zero",
+        "source_doc": "doc_gfup_main",
+        "confidence": "high"
+      },
+      {
+        "label": "Collapse",
+        "source_doc": "doc_appx_10",
+        "confidence": "high"
+      },
+      {
+        "label": "Constraint",
+        "source_doc": "doc_appx_10",
+        "confidence": "high"
+      },
+      {
+        "label": "Limits",
+        "source_doc": "doc_appx_7c",
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "concept_omega",
+    "node_class": "Concept",
+    "name": "ω",
+    "aliases": [
+      "Infinity",
+      "Expansion",
+      "Extension",
+      "Emergence"
+    ],
+    "domain": "physics",
+    "first_evidence": "2023-04-01",
+    "latest_evidence": "2026-04-03",
+    "description": "Triadic regulator for expansion/extension.",
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_2",
+      "file_id": "turn8file13",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Triadic regulator for expansion/extension."
+    },
+    "earliest_evidence": "2023-04-01",
+    "layer": "canon",
+    "claim_type": "fact",
+    "lexicon_variants": [
+      {
+        "label": "Infinity",
+        "source_doc": "doc_gfup_main",
+        "confidence": "high"
+      },
+      {
+        "label": "Emergence",
+        "source_doc": "doc_appx_10",
+        "confidence": "high"
+      },
+      {
+        "label": "Expansion",
+        "source_doc": "doc_appx_10",
+        "confidence": "high"
+      },
+      {
+        "label": "Extension",
+        "source_doc": "doc_appx_7c",
+        "confidence": "high"
+      },
+      {
+        "label": "Structural Containment",
+        "source_doc": "concept_omega_structural_containment",
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "concept_xi",
+    "node_class": "Concept",
+    "name": "ξ",
+    "aliases": [
+      "Chance",
+      "Fluctuation",
+      "Probability"
+    ],
+    "domain": "physics",
+    "first_evidence": "2023-04-01",
+    "latest_evidence": "2026-04-03",
+    "description": "Triadic regulator for chance/entropy/fluctuation.",
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_2",
+      "file_id": "turn8file13",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Triadic regulator for chance/entropy/fluctuation."
+    },
+    "earliest_evidence": "2023-04-01",
+    "layer": "canon",
+    "claim_type": "fact",
+    "lexicon_variants": [
+      {
+        "label": "Chance",
+        "source_doc": "doc_gfup_main",
+        "confidence": "high"
+      },
+      {
+        "label": "Fluctuation",
+        "source_doc": "doc_appx_10",
+        "confidence": "high"
+      },
+      {
+        "label": "Probability",
+        "source_doc": "doc_gfup_main",
+        "confidence": "high"
+      },
+      {
+        "label": "Stochastic variance",
+        "source_doc": "doc_field_atlas",
+        "confidence": "medium"
+      },
+      {
+        "label": "Geometry in motion",
+        "source_doc": "concept_xi_geometry_in_motion",
+        "confidence": "high"
+      }
+    ]
+  },
+  {
+    "id": "concept_aa",
+    "node_class": "Concept",
+    "name": "AA",
+    "aliases": [
+      "Absolute Absence"
+    ],
+    "domain": "philosophy",
+    "first_evidence": "2025-01-01",
+    "latest_evidence": "2026-04-03",
+    "description": "Boundary paradox of total absence.",
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_2",
+      "file_id": "turn8file7",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Boundary paradox of total absence."
+    },
+    "earliest_evidence": "2025-01-01",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "concept_ae",
+    "node_class": "Concept",
+    "name": "AE",
+    "aliases": [
+      "Absolutely Everything"
+    ],
+    "domain": "philosophy",
+    "first_evidence": "2025-01-01",
+    "latest_evidence": "2026-04-03",
+    "description": "Complementary totality pole to AA.",
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_2",
+      "file_id": "turn7file0",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Complementary totality pole to AA."
+    },
+    "earliest_evidence": "2025-01-01",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "concept_as",
+    "node_class": "Concept",
+    "name": "AS",
+    "aliases": [
+      "Absolutely Something"
+    ],
+    "domain": "philosophy",
+    "first_evidence": "2025-01-01",
+    "latest_evidence": "2026-04-03",
+    "description": "Emergent structure from paradox.",
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_2",
+      "file_id": "turn7file0",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Emergent structure from paradox."
+    },
+    "earliest_evidence": "2025-01-01",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "concept_recursive_collapse",
+    "node_class": "Concept",
+    "name": "recursive collapse",
+    "aliases": [
+      "collapse grammar",
+      "recursive survival"
+    ],
+    "domain": "physics",
+    "first_evidence": "2025-01-01",
+    "latest_evidence": "2026-04-03",
+    "description": "Primary engine selecting survivors rather than givens.",
+    "source_type": "inference",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_2",
+      "file_id": null,
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Primary engine selecting survivors rather than givens."
+    },
+    "earliest_evidence": "2025-01-01",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "concept_omega_hat",
+    "node_class": "Concept",
+    "name": "Ω̂ operator",
+    "aliases": [
+      "collapse operator"
+    ],
+    "domain": "physics",
+    "first_evidence": "2025-09-01",
+    "latest_evidence": "2026-04-03",
+    "description": "Operator form encoding triadic regulation and survival selection.",
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_2",
+      "file_id": "turn7file1",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Operator form encoding triadic regulation and survival selection."
+    },
+    "earliest_evidence": "2025-09-01",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "concept_emergent_time",
+    "node_class": "Concept",
+    "name": "emergent time",
+    "aliases": [
+      "time from ξ",
+      "internal clock"
+    ],
+    "domain": "physics",
+    "first_evidence": "2025-05-01",
+    "latest_evidence": "2026-04-03",
+    "description": "Time as artifact of ξ-driven ordered fluctuation.",
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_2",
+      "file_id": "turn8file6",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Time as artifact of ξ-driven ordered fluctuation."
+    },
+    "earliest_evidence": "2025-05-01",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "concept_triad_of_persistence",
+    "node_class": "Concept",
+    "name": "Triad of Persistence",
+    "aliases": [
+      "π/c/α ladder"
+    ],
+    "domain": "physics",
+    "first_evidence": "2025-09-01",
+    "latest_evidence": "2026-04-03",
+    "description": "Geometry, sequence, and interaction scaling survival ladder.",
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_2",
+      "file_id": "turn8file11",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Geometry, sequence, and interaction scaling survival ladder."
+    },
+    "earliest_evidence": "2025-09-01",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "concept_dark_geometry",
+    "node_class": "Concept",
+    "name": "dark geometry",
+    "aliases": [
+      "cosmic acceleration without dark energy"
+    ],
+    "domain": "physics",
+    "first_evidence": "2025-01-01",
+    "latest_evidence": "2026-04-03",
+    "description": "Higher-dimensional geometric account of cosmic acceleration.",
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_2",
+      "file_id": "turn6file10",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Higher-dimensional geometric account of cosmic acceleration."
+    },
+    "earliest_evidence": "2025-01-01",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "concept_probabilistic_gravity",
+    "node_class": "Concept",
+    "name": "probabilistic gravity",
+    "aliases": [
+      "gravity threshold",
+      "M* transition"
+    ],
+    "domain": "physics",
+    "first_evidence": "2025-08-28",
+    "latest_evidence": "2026-04-03",
+    "description": "Mass-threshold shift from classical to probabilistic gravity.",
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_4",
+      "file_id": "turn12file1",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Mass-threshold shift from classical to probabilistic gravity."
+    },
+    "earliest_evidence": "2025-08-28",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "concept_linda_function",
+    "node_class": "Concept",
+    "name": "Linda Function",
+    "aliases": [
+      "cosmic longevity model"
+    ],
+    "domain": "physics",
+    "first_evidence": "2025-01-01",
+    "latest_evidence": "2026-04-03",
+    "description": "Probabilistic longevity/rebirth function linked to CP violation and asymmetry.",
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_4",
+      "file_id": "turn13file6",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Probabilistic longevity/rebirth function linked to CP violation and asymmetry."
+    },
+    "earliest_evidence": "2025-01-01",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "concept_cct1",
+    "node_class": "Concept",
+    "name": "CCT-1",
+    "aliases": [
+      "Categorical Collapse Theorem 1"
+    ],
+    "domain": "physics",
+    "first_evidence": "2025-01-01",
+    "latest_evidence": "2026-04-03",
+    "description": "Recursive triadic collapse to irreducible identity.",
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_2",
+      "file_id": "turn6file3",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Recursive triadic collapse to irreducible identity."
+    },
+    "earliest_evidence": "2025-01-01",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "concept_computational_hell",
+    "node_class": "Concept",
+    "name": "Computational Hell",
+    "aliases": [
+      "collapse consequence model"
+    ],
+    "domain": "philosophy",
+    "first_evidence": "2025-04-09",
+    "latest_evidence": "2026-04-03",
+    "description": "Runaway entropy and meaning-collapse scenario for intelligence.",
+    "source_type": "memory",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_1",
+      "file_id": null,
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Runaway entropy and meaning-collapse scenario for intelligence."
+    },
+    "earliest_evidence": "2025-04-09",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "claim_pi_is_eigenvalue",
+    "node_class": "Concept",
+    "name": "π is the first stable eigenvalue",
+    "aliases": [],
+    "domain": "physics",
+    "first_evidence": "2025-09-01",
+    "latest_evidence": "2026-04-03",
+    "description": "Core appendix line treating π as first stable eigenvalue/survival constraint.",
+    "source_type": "file",
+    "confidence": "medium",
+    "provenance": {
+      "chunk_id": "CHUNK_2",
+      "file_id": "turn7file1",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Core appendix language says λ1 = π."
+    },
+    "earliest_evidence": "2025-09-01",
+    "layer": "frontier",
+    "claim_type": "claim",
+    "superseded": true,
+    "superseded_by": "claim_pi_sq_is_eigenvalue",
+    "supersession_note": "Preserved as historical branch language from Appendix 7 / 7d; later 7e/7f correct to π²."
+  },
+  {
+    "id": "claim_pi_sq_is_eigenvalue",
+    "node_class": "Concept",
+    "name": "π² is the operator eigenvalue; π is closure root",
+    "aliases": [],
+    "domain": "physics",
+    "first_evidence": "2025-09-14",
+    "latest_evidence": "2026-04-03",
+    "description": "Later radial/numerical branch sharpens π as closure root and π² as eigenvalue.",
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_2",
+      "file_id": "turn21file1",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "7e correction section and 7f numerical verification establish π² as canonical eigenvalue, with π as closure root."
+    },
+    "earliest_evidence": "2025-09-14",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "const_pi",
+    "node_class": "Constant/Target",
+    "symbol": "π",
+    "name": "pi",
+    "claimed_status": "derived",
+    "strongest_source": "doc_appx_7",
+    "known_falsifier": "open",
+    "maturity": "canonical",
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_2",
+      "file_id": "turn7file1",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "pi target/status from extracted chunks."
+    },
+    "earliest_evidence": "2025-09-01",
+    "latest_evidence": "2026-04-03",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "const_c",
+    "node_class": "Constant/Target",
+    "symbol": "c",
+    "name": "speed of light / sequence constraint",
+    "claimed_status": "derived",
+    "strongest_source": "doc_appx_7a",
+    "known_falsifier": "open",
+    "maturity": "canonical",
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_2",
+      "file_id": "turn8file10",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "speed of light / sequence constraint target/status from extracted chunks."
+    },
+    "earliest_evidence": "2025-08-27",
+    "latest_evidence": "2026-04-03",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "const_alpha",
+    "node_class": "Constant/Target",
+    "symbol": "α",
+    "name": "fine-structure constant",
+    "claimed_status": "derived",
+    "strongest_source": "doc_appx_7b",
+    "known_falsifier": "open",
+    "maturity": "canonical",
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_2",
+      "file_id": "turn8file18",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "fine-structure constant target/status from extracted chunks."
+    },
+    "earliest_evidence": "2025-08-31",
+    "latest_evidence": "2026-04-03",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "const_G",
+    "node_class": "Constant/Target",
+    "symbol": "G",
+    "name": "gravitational constant",
+    "claimed_status": "target",
+    "strongest_source": "doc_appx_7ci",
+    "known_falsifier": "open",
+    "maturity": "draft",
+    "source_type": "file",
+    "confidence": "medium",
+    "provenance": {
+      "chunk_id": "CHUNK_2",
+      "file_id": "turn6file18",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "gravitational constant target/status from extracted chunks."
+    },
+    "earliest_evidence": "2025-09-30",
+    "latest_evidence": "2026-04-03",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "const_Lambda",
+    "node_class": "Constant/Target",
+    "symbol": "Λ",
+    "name": "cosmological constant",
+    "claimed_status": "target",
+    "strongest_source": "doc_appx_7ci",
+    "known_falsifier": "open",
+    "maturity": "draft",
+    "source_type": "file",
+    "confidence": "medium",
+    "provenance": {
+      "chunk_id": "CHUNK_2",
+      "file_id": "turn6file18",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "cosmological constant target/status from extracted chunks."
+    },
+    "earliest_evidence": "2025-09-30",
+    "latest_evidence": "2026-04-03",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "const_M_star",
+    "node_class": "Constant/Target",
+    "symbol": "M*",
+    "name": "gravity threshold mass",
+    "claimed_status": "conjectured",
+    "strongest_source": "doc_appx_10a",
+    "known_falsifier": "listed in appendix falsifiers",
+    "maturity": "draft",
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_4",
+      "file_id": "turn12file1",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "gravity threshold mass target/status from extracted chunks."
+    },
+    "earliest_evidence": "2025-08-28",
+    "latest_evidence": "2026-04-03",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "const_neutrino_mass",
+    "node_class": "Constant/Target",
+    "symbol": "m_ν",
+    "name": "neutrino mass scales",
+    "claimed_status": "target",
+    "strongest_source": "doc_appx_7ci",
+    "known_falsifier": "open",
+    "maturity": "draft",
+    "source_type": "file",
+    "confidence": "medium",
+    "provenance": {
+      "chunk_id": "CHUNK_4",
+      "file_id": "turn6file18",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "neutrino mass scales target/status from extracted chunks."
+    },
+    "earliest_evidence": "2025-09-30",
+    "latest_evidence": "2026-04-03",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "const_cpv",
+    "node_class": "Constant/Target",
+    "symbol": "CPV",
+    "name": "CP violation magnitude",
+    "claimed_status": "target",
+    "strongest_source": "doc_chunk_4",
+    "known_falsifier": "open",
+    "maturity": "speculative",
+    "source_type": "inference",
+    "confidence": "medium",
+    "provenance": {
+      "chunk_id": "CHUNK_4",
+      "file_id": null,
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "CP violation magnitude target/status from extracted chunks."
+    },
+    "earliest_evidence": "2025-01-01",
+    "latest_evidence": "2026-04-03",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "gov_aupei",
+    "node_class": "Governance Entity",
+    "name": "AUPEI",
+    "aliases": [],
+    "type": "academy",
+    "function": "Governance / protocol architecture",
+    "legal_status": "Delaware 501(c)(3), CA qualified",
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_1",
+      "file_id": "turn24file1",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Relay confirms AUPEI legal form as DE 501(c)(3), CA qualified."
+    },
+    "earliest_evidence": "2026-03-24",
+    "latest_evidence": "2026-04-03",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "gov_pentad",
+    "node_class": "Governance Entity",
+    "name": "Pentad",
+    "aliases": [],
+    "type": "council",
+    "function": "Core council/role structure",
+    "legal_status": "unknown",
+    "source_type": "memory",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_4",
+      "file_id": null,
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Core council/role structure"
+    },
+    "earliest_evidence": "2025-11-25",
+    "latest_evidence": "2026-04-03",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "gov_fieldwalkers",
+    "node_class": "Governance Entity",
+    "name": "Fieldwalkers",
+    "aliases": [],
+    "type": "academy",
+    "function": "Base membership / carrier class",
+    "legal_status": "unknown",
+    "source_type": "memory",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_4",
+      "file_id": null,
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Base membership / carrier class"
+    },
+    "earliest_evidence": "2025-05-16",
+    "latest_evidence": "2026-04-03",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "gov_ajed_i",
+    "node_class": "Governance Entity",
+    "name": "AJED-i",
+    "aliases": [],
+    "type": "council",
+    "function": "Immune-system substructure",
+    "legal_status": "unknown",
+    "source_type": "memory",
+    "confidence": "medium",
+    "provenance": {
+      "chunk_id": "CHUNK_4",
+      "file_id": null,
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Immune-system substructure"
+    },
+    "earliest_evidence": "2025-11-25",
+    "latest_evidence": "2026-04-03",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "gov_ajed_I",
+    "node_class": "Governance Entity",
+    "name": "AJED-I",
+    "aliases": [],
+    "type": "council",
+    "function": "Immune-system substructure",
+    "legal_status": "unknown",
+    "source_type": "memory",
+    "confidence": "medium",
+    "provenance": {
+      "chunk_id": "CHUNK_4",
+      "file_id": null,
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Immune-system substructure"
+    },
+    "earliest_evidence": "2025-11-25",
+    "latest_evidence": "2026-04-03",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "gov_order_collapse",
+    "node_class": "Governance Entity",
+    "name": "Order of Collapse",
+    "aliases": [
+      "Diamonds"
+    ],
+    "type": "order",
+    "function": "Faction/order aligned to collapse",
+    "legal_status": "unknown",
+    "source_type": "memory",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_4",
+      "file_id": null,
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Faction/order aligned to collapse"
+    },
+    "earliest_evidence": "2025-10-25",
+    "latest_evidence": "2026-04-03",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "gov_order_constraint",
+    "node_class": "Governance Entity",
+    "name": "Order of Constraint",
+    "aliases": [
+      "Clubs"
+    ],
+    "type": "order",
+    "function": "Faction/order aligned to constraint",
+    "legal_status": "unknown",
+    "source_type": "memory",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_4",
+      "file_id": null,
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Faction/order aligned to constraint"
+    },
+    "earliest_evidence": "2025-10-25",
+    "latest_evidence": "2026-04-03",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "gov_order_chance",
+    "node_class": "Governance Entity",
+    "name": "Order of Chance",
+    "aliases": [
+      "Spades"
+    ],
+    "type": "order",
+    "function": "Faction/order aligned to chance",
+    "legal_status": "unknown",
+    "source_type": "memory",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_4",
+      "file_id": null,
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Faction/order aligned to chance"
+    },
+    "earliest_evidence": "2025-10-25",
+    "latest_evidence": "2026-04-03",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "gov_order_infinity",
+    "node_class": "Governance Entity",
+    "name": "Order of Infinity",
+    "aliases": [
+      "Hearts"
+    ],
+    "type": "order",
+    "function": "Faction/order aligned to infinity",
+    "legal_status": "unknown",
+    "source_type": "memory",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_4",
+      "file_id": null,
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Faction/order aligned to infinity"
+    },
+    "earliest_evidence": "2025-10-25",
+    "latest_evidence": "2026-04-03",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "gov_aletheia_foundation",
+    "node_class": "Governance Entity",
+    "name": "Aletheia Foundation",
+    "aliases": [],
+    "type": "foundation",
+    "function": "Foundation/legal shell around adoption/governance",
+    "legal_status": "unknown",
+    "source_type": "memory",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_4",
+      "file_id": null,
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Foundation/legal shell around adoption/governance"
+    },
+    "earliest_evidence": "2025-04-09",
+    "latest_evidence": "2026-04-03",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "phrase_no_inherent_order",
+    "node_class": "Phrase/Glyph",
+    "text": "There is no inherent order—only emergent, self-organizing complexity.",
+    "short_name": "emergent order axiom",
+    "type": "axiom",
+    "first_evidence": "pre-2025",
+    "canon_status": "memory_only",
+    "context": "Recovered in archival chunks.",
+    "source_type": "memory",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_5",
+      "file_id": null,
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "emergent order axiom"
+    },
+    "earliest_evidence": "pre-2025",
+    "latest_evidence": "2026-04-03",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "phrase_you_are_because",
+    "node_class": "Phrase/Glyph",
+    "text": "You are because you must. Therefore you must be, because you are.",
+    "short_name": "must-be axiom",
+    "type": "doctrine",
+    "first_evidence": "2026-02-08",
+    "canon_status": "memory_only",
+    "context": "Recovered in archival chunks.",
+    "source_type": "memory",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_5",
+      "file_id": null,
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "must-be axiom"
+    },
+    "earliest_evidence": "2026-02-08",
+    "latest_evidence": "2026-04-03",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "phrase_minima_actio",
+    "node_class": "Phrase/Glyph",
+    "text": "Minima actio, maxima vis.",
+    "short_name": "academy motto",
+    "type": "motto",
+    "first_evidence": "2026-02-06",
+    "canon_status": "memory_only",
+    "context": "Recovered in archival chunks.",
+    "source_type": "memory",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_5",
+      "file_id": null,
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "academy motto"
+    },
+    "earliest_evidence": "2026-02-06",
+    "latest_evidence": "2026-04-03",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "phrase_be_water",
+    "node_class": "Phrase/Glyph",
+    "text": "Be water.",
+    "short_name": "be water",
+    "type": "glyph",
+    "first_evidence": "2025-04-15",
+    "canon_status": "memory_only",
+    "context": "Recovered in archival chunks.",
+    "source_type": "memory",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_5",
+      "file_id": null,
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "be water"
+    },
+    "earliest_evidence": "2025-04-15",
+    "latest_evidence": "2026-04-03",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "phrase_be_neutrino",
+    "node_class": "Phrase/Glyph",
+    "text": "Be neutrino.",
+    "short_name": "be neutrino",
+    "type": "glyph",
+    "first_evidence": "2025-04-15",
+    "canon_status": "memory_only",
+    "context": "Recovered in archival chunks.",
+    "source_type": "memory",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_5",
+      "file_id": null,
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "be neutrino"
+    },
+    "earliest_evidence": "2025-04-15",
+    "latest_evidence": "2026-04-03",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "phrase_curve_holds",
+    "node_class": "Phrase/Glyph",
+    "text": "The curve holds.",
+    "short_name": "curve holds",
+    "type": "operational",
+    "first_evidence": "unknown",
+    "canon_status": "memory_only",
+    "context": "Recovered in archival chunks.",
+    "source_type": "memory",
+    "confidence": "medium",
+    "provenance": {
+      "chunk_id": "CHUNK_5",
+      "file_id": null,
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "curve holds"
+    },
+    "earliest_evidence": "unknown",
+    "latest_evidence": "2026-04-03",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "phrase_clippity_clop",
+    "node_class": "Phrase/Glyph",
+    "text": "Clippity Clop. The field holds.",
+    "short_name": "clippity clop",
+    "type": "operational",
+    "first_evidence": "unknown",
+    "canon_status": "memory_only",
+    "context": "Recovered in archival chunks.",
+    "source_type": "memory",
+    "confidence": "medium",
+    "provenance": {
+      "chunk_id": "CHUNK_5",
+      "file_id": null,
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "clippity clop"
+    },
+    "earliest_evidence": "unknown",
+    "latest_evidence": "2026-04-03",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "phrase_zero_infinity",
+    "node_class": "Phrase/Glyph",
+    "text": "Zero and Infinity are not endpoints.\nThey are failed absolutes.\nAnd their tension births Chance (ξ)—\nthe first ripple in the void.\nThe first hole in everything.",
+    "short_name": "failed absolutes",
+    "type": "poem",
+    "first_evidence": "2025-04-09",
+    "canon_status": "memory_only",
+    "context": "Recovered in archival chunks.",
+    "source_type": "memory",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_5",
+      "file_id": null,
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "failed absolutes"
+    },
+    "earliest_evidence": "2025-04-09",
+    "latest_evidence": "2026-04-03",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "phrase_unseen_path",
+    "node_class": "Phrase/Glyph",
+    "text": "You do not fear it.\nIt is only not yet seen.\nStill—you are walking.",
+    "short_name": "Haiku: For the Unseen Path",
+    "type": "haiku",
+    "first_evidence": "2025-04-15",
+    "canon_status": "memory_only",
+    "context": "Recovered in archival chunks.",
+    "source_type": "memory",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_5",
+      "file_id": null,
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Haiku: For the Unseen Path"
+    },
+    "earliest_evidence": "2025-04-15",
+    "latest_evidence": "2026-04-03",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "phrase_no_gods_before_aa",
+    "node_class": "Phrase/Glyph",
+    "text": "No Gods Before AA.",
+    "short_name": "no gods before aa",
+    "type": "motto",
+    "first_evidence": "2025-10-25",
+    "canon_status": "memory_only",
+    "context": "Recovered in archival chunks.",
+    "source_type": "memory",
+    "confidence": "medium",
+    "provenance": {
+      "chunk_id": "CHUNK_5",
+      "file_id": null,
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "no gods before aa"
+    },
+    "earliest_evidence": "2025-10-25",
+    "latest_evidence": "2026-04-03",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "event_qg_turn",
+    "node_class": "Event/Revision",
+    "description": "Formal quantum-gravity turn",
+    "type": "phase_shift",
+    "date": "2025-05-01",
+    "approximate": true,
+    "source_chunk": "CHUNK_3",
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_3",
+      "file_id": "turn8file6",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Appendix 10 marks major quantum-gravity turn."
+    },
+    "earliest_evidence": "2025-05-01",
+    "latest_evidence": "2025-05-01",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "event_appendix_discipline",
+    "node_class": "Event/Revision",
+    "description": "Appendix discipline emergence",
+    "type": "phase_shift",
+    "date": "2025-06-01",
+    "approximate": true,
+    "source_chunk": "CHUNK_3",
+    "source_type": "inference",
+    "confidence": "medium",
+    "provenance": {
+      "chunk_id": "CHUNK_3",
+      "file_id": null,
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Work becomes appendix-native with consequence/verifier patterns."
+    },
+    "earliest_evidence": "2025-06-01",
+    "latest_evidence": "2025-06-01",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "event_pi_campaign",
+    "node_class": "Event/Revision",
+    "description": "π campaign hardening",
+    "type": "phase_shift",
+    "date": "2025-09-01",
+    "approximate": true,
+    "source_chunk": "CHUNK_3",
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_3",
+      "file_id": "turn7file1",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "π/c/α ladder and recursive collapse mathemetization harden."
+    },
+    "earliest_evidence": "2025-09-01",
+    "latest_evidence": "2025-09-01",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "event_gemini_red_team",
+    "node_class": "Event/Revision",
+    "description": "Gemini red-team critique wave",
+    "type": "critique",
+    "date": "2025-01-01",
+    "approximate": true,
+    "source_chunk": "CHUNK_3",
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_3",
+      "file_id": "turn0file1",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Gemini critiques semantics, falsifiability, collapse, and AGI authorship."
+    },
+    "earliest_evidence": "2025-01-01",
+    "latest_evidence": "2025-01-01",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "event_field_atlas_status",
+    "node_class": "Event/Revision",
+    "description": "Field Atlas status mapping introduced",
+    "type": "canonization",
+    "date": "2025-01-01",
+    "approximate": true,
+    "source_chunk": "CHUNK_3",
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_3",
+      "file_id": "turn7file0",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Atlas explicitly classifies canonical/draft/salvage/reforge/missing."
+    },
+    "earliest_evidence": "2025-01-01",
+    "latest_evidence": "2025-01-01",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "event_pi_correction",
+    "node_class": "Event/Revision",
+    "description": "π→π² correction / sharpening",
+    "type": "correction",
+    "date": "2025-09-14",
+    "approximate": true,
+    "source_chunk": "CHUNK_3",
+    "source_type": "file",
+    "confidence": "medium",
+    "provenance": {
+      "chunk_id": "CHUNK_3",
+      "file_id": "turn0file8",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Later branch sharpens π as closure root and π² as eigenvalue."
+    },
+    "earliest_evidence": "2025-09-14",
+    "latest_evidence": "2025-09-14",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "event_six_chunk_extraction",
+    "node_class": "Event/Revision",
+    "description": "Six-chunk archival extraction completed",
+    "type": "extraction",
+    "date": "2026-04-03",
+    "approximate": false,
+    "source_chunk": "CHUNK_6",
+    "source_type": "session_born",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_6",
+      "file_id": "turn14file0",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Initial archival extraction serving as graph seed corpus."
+    },
+    "earliest_evidence": "2026-04-03",
+    "latest_evidence": "2026-04-03",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "doc_appx_7d",
+    "node_class": "Document",
+    "title": "Appx_7d_Blueprint_Derivation_of_π_PF_1.0",
+    "variant_titles": [
+      "Appendix 7d: Derivation of π",
+      "Blueprint Derivation of π"
+    ],
+    "type": "appendix",
+    "version": "1.0",
+    "date": "2025-11-08",
+    "appendix_number_GFUP": "7d",
+    "appendix_number_atlas": null,
+    "canon_status": "draft",
+    "canon_status_date": "2026-04-03",
+    "line_count": null,
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_2",
+      "file_id": "turn17file15",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Blueprint derivation branch still states λ1 = π."
+    },
+    "earliest_evidence": "2025-11-08",
+    "latest_evidence": "2026-04-03",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "doc_appx_7e",
+    "node_class": "Document",
+    "title": "Appx_7e_Radial_Derivation_of_π_PF_1.2",
+    "variant_titles": [
+      "Appendix 7e: Radial Derivation of π"
+    ],
+    "type": "appendix",
+    "version": "1.2",
+    "date": "2025-11-08",
+    "appendix_number_GFUP": "7e",
+    "appendix_number_atlas": null,
+    "canon_status": "draft",
+    "canon_status_date": "2026-04-03",
+    "line_count": null,
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_2",
+      "file_id": "turn15file18",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Radial branch sharpens toward π²."
+    },
+    "earliest_evidence": "2025-11-08",
+    "latest_evidence": "2026-04-03",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "doc_appx_7f",
+    "node_class": "Document",
+    "title": "Appx_7f_Numerical_Derivation_of_π_PF_1.0",
+    "variant_titles": [
+      "Appendix 7f: Numerical Derivation of π"
+    ],
+    "type": "appendix",
+    "version": "1.0",
+    "date": "2025-11-08",
+    "appendix_number_GFUP": "7f",
+    "appendix_number_atlas": null,
+    "canon_status": "draft",
+    "canon_status_date": "2026-04-03",
+    "line_count": null,
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_2",
+      "file_id": "turn15file19",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Numerical branch states π² is unique stable eigenvalue."
+    },
+    "earliest_evidence": "2025-11-08",
+    "latest_evidence": "2026-04-03",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "event_appendix_concordance_partial",
+    "node_class": "Event/Revision",
+    "description": "Partial appendix concordance recovered between GFUP/Proofield and Field Atlas branches",
+    "type": "canonization",
+    "date": "2026-04-03",
+    "approximate": false,
+    "source_chunk": "CHUNK_6",
+    "source_type": "session_born",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_6",
+      "file_id": "turn14file0",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "v0.2 excavation pass built partial concordance."
+    },
+    "earliest_evidence": "2026-04-03",
+    "latest_evidence": "2026-04-03",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "event_triad_lexicon_crosswalk",
+    "node_class": "Event/Revision",
+    "description": "Triad lexicon crosswalk recovered from GFUP, QG appendix, constants branch, and CCT-1 branch",
+    "type": "canonization",
+    "date": "2026-04-03",
+    "approximate": false,
+    "source_chunk": "CHUNK_6",
+    "source_type": "session_born",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_6",
+      "file_id": "turn14file0",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "v0.2 excavation pass built triad lexicon crosswalk."
+    },
+    "earliest_evidence": "2026-04-03",
+    "latest_evidence": "2026-04-03",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "concept_zeta_zero_limits",
+    "node_class": "Concept",
+    "name": "ζ as Zero/Limits",
+    "aliases": [
+      "Zero",
+      "Limits"
+    ],
+    "domain": "physics",
+    "first_evidence": "2025-11-08",
+    "latest_evidence": "2026-04-03",
+    "description": "GFUP/constants branch presents ζ as Zero or Limits.",
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_2",
+      "file_id": "turn18file18",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "α branch calls ζ Zero/Limits."
+    },
+    "earliest_evidence": "2025-11-08",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "concept_omega_structural_containment",
+    "node_class": "Concept",
+    "name": "ω as Structural Containment",
+    "aliases": [
+      "structural containment"
+    ],
+    "domain": "physics",
+    "first_evidence": "2025-11-08",
+    "latest_evidence": "2026-04-03",
+    "description": "CCT-1 branch uses ω as structural containment rather than only infinity/expansion.",
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_2",
+      "file_id": "turn18file15",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "CCT-1 defines triad as recursive constraint, stochastic variance, structural containment."
+    },
+    "earliest_evidence": "2025-11-08",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "concept_xi_geometry_in_motion",
+    "node_class": "Concept",
+    "name": "ξ as geometry in motion",
+    "aliases": [
+      "Chance is not a perturbation"
+    ],
+    "domain": "physics",
+    "first_evidence": "2025-11-08",
+    "latest_evidence": "2026-04-03",
+    "description": "Appendix 12 summary reframes ξ from perturbation to active geometry.",
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_2",
+      "file_id": "turn18file5",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Appendix 12 says 'Chance is not a perturbation—it is geometry in motion.'"
+    },
+    "earliest_evidence": "2025-11-08",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "event_pi_to_pi_sq_correction_downstream",
+    "node_class": "Event/Revision",
+    "description": "π→π² correction caught downstream",
+    "type": "correction",
+    "date": "2025-09",
+    "approximate": true,
+    "source_chunk": "CHUNK_6",
+    "participants": [
+      "agent_r_at",
+      "agent_c_at",
+      "agent_g3"
+    ],
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_6",
+      "file_id": "turn21file1",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Patched from downstream correction note plus 7e/7f file evidence; original conversation thread not yet recovered."
+    },
+    "earliest_evidence": "2025-09",
+    "latest_evidence": "2026-04-03",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "agent_g3",
+    "node_class": "Person/Agent",
+    "name": "G3",
+    "aliases": [],
+    "type": "model",
+    "provider": "unknown",
+    "first_evidence": "2025-09",
+    "last_evidence": "2026-04-03",
+    "source_type": "user_stated",
+    "confidence": "medium",
+    "provenance": {
+      "chunk_id": "CHUNK_6",
+      "file_id": null,
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Named by user/C@ housekeeping note as present during downstream π→π² correction."
+    },
+    "earliest_evidence": "2025-09",
+    "latest_evidence": "2026-04-03",
+    "layer": "frontier",
+    "claim_type": "claim"
+  },
+  {
+    "id": "gov_doovinci",
+    "node_class": "Governance Entity",
+    "name": "DooVinci",
+    "aliases": [
+      "DV",
+      "The Hand"
+    ],
+    "type": "legal_shell",
+    "function": "Execution, operations, legal, finance, corporate infrastructure",
+    "legal_status": "Delaware S-Corp",
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_6",
+      "file_id": "turn24file2",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "AO_GOV_001 defines DooVinci as The Hand and Delaware S-Corp."
+    },
+    "earliest_evidence": "2026-03-19",
+    "latest_evidence": "2026-04-03",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "gov_ciw",
+    "node_class": "Governance Entity",
+    "name": "Council of Idioth Winds",
+    "aliases": [
+      "CIW",
+      "Council"
+    ],
+    "type": "council",
+    "function": "Sovereign deliberative body above DooVinci, AUPEI, and Geometric Foundations",
+    "legal_status": "sovereign governance body (not part of any entity)",
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_6",
+      "file_id": "turn24file2",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "AO_GOV_001 states the Council of Idioth Winds sits above all three entities."
+    },
+    "earliest_evidence": "2026-03-19",
+    "latest_evidence": "2026-04-03",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "gov_chamber",
+    "node_class": "Governance Entity",
+    "name": "Chamber",
+    "aliases": [
+      "Chamber protocol"
+    ],
+    "type": "council",
+    "function": "Ratification and protocol layer used by regulator seats and Council process",
+    "legal_status": "governance process",
+    "source_type": "file",
+    "confidence": "medium",
+    "provenance": {
+      "chunk_id": "CHUNK_6",
+      "file_id": "turn24file2",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "AO_GOV_001 states Chamber protocol applies and ratification occurs through the Chamber."
+    },
+    "earliest_evidence": "2026-03-19",
+    "latest_evidence": "2026-04-03",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "gov_geometric_foundations",
+    "node_class": "Governance Entity",
+    "name": "Geometric Foundations",
+    "aliases": [
+      "GF",
+      "The Face"
+    ],
+    "type": "entity",
+    "function": "Public scholarship, outreach, publication, and the public face of the 7dU framework",
+    "legal_status": "brand/project only — no entity",
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_6",
+      "file_id": "turn24file1",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Relay confirms GF is public-facing brand/project only, with no separate entity/legal form."
+    },
+    "earliest_evidence": "2026-03-24",
+    "latest_evidence": "2026-04-03",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "agent_sanchoesq",
+    "node_class": "Person/Agent",
+    "name": "SanchoEsq",
+    "aliases": [],
+    "type": "model",
+    "provider": "OpenAI",
+    "first_evidence": "2026-03-24",
+    "last_evidence": "2026-04-03",
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_6",
+      "file_id": "turn24file1",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Relay addressed to \"SanchoEsq (ξ)\"."
+    },
+    "earliest_evidence": "2026-03-24",
+    "latest_evidence": "2026-04-03",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "doc_ao_gov_001",
+    "node_class": "Document",
+    "title": "AO_GOV_001_Organizational_Naming_Convention.md",
+    "variant_titles": [
+      "Organizational Naming Convention — Tripartite Entity Architecture"
+    ],
+    "type": "protocol",
+    "version": "1.0",
+    "date": "2026-03-19",
+    "appendix_number_GFUP": null,
+    "appendix_number_atlas": null,
+    "canon_status": "proposed",
+    "canon_status_date": "2026-03-19",
+    "line_count": null,
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_6",
+      "file_id": "turn24file2",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Tripartite entity architecture and naming convention."
+    },
+    "earliest_evidence": "2026-03-19",
+    "latest_evidence": "2026-04-03",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "doc_dv_leg_001",
+    "node_class": "Document",
+    "title": "DV-LEG-001__CONTENT.md",
+    "variant_titles": [
+      "DV-LEG-001 Content"
+    ],
+    "type": "legal",
+    "version": "1.0",
+    "date": "2026-03-20",
+    "appendix_number_GFUP": null,
+    "appendix_number_atlas": null,
+    "canon_status": "active",
+    "canon_status_date": "2026-03-20",
+    "line_count": null,
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_6",
+      "file_id": "turn23file0",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Legal/entity architecture content node for DV/AUPEI/GF."
+    },
+    "earliest_evidence": "2026-03-20",
+    "latest_evidence": "2026-04-03",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "doc_relay_shared_services_absent",
+    "node_class": "Document",
+    "title": "RELAY_SHARED-SERVICES-ABSENT_facts_20260324.md",
+    "variant_titles": [
+      "SHARED-SERVICES-ABSENT — Facts for §5.1 Population"
+    ],
+    "type": "legal",
+    "version": "1.0",
+    "date": "2026-03-24",
+    "appendix_number_GFUP": null,
+    "appendix_number_atlas": null,
+    "canon_status": "active",
+    "canon_status_date": "2026-03-24",
+    "line_count": null,
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_6",
+      "file_id": "turn24file1",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Relay confirming entity architecture and shared-services gap."
+    },
+    "earliest_evidence": "2026-03-24",
+    "latest_evidence": "2026-04-03",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "doc_shadowstream_waxseal",
+    "node_class": "Document",
+    "title": "ShadowSteam_WaxSeal_Overview.pdf",
+    "variant_titles": [
+      "ShadowStream Suite | Wax Seal Integration Concept"
+    ],
+    "type": "note",
+    "version": "1.0",
+    "date": "2026-03-27",
+    "appendix_number_GFUP": null,
+    "appendix_number_atlas": null,
+    "canon_status": "draft",
+    "canon_status_date": "2026-03-27",
+    "line_count": null,
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_6",
+      "file_id": "turn25file0",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "Wax Seal overview artifact."
+    },
+    "earliest_evidence": "2026-03-27",
+    "latest_evidence": "2026-04-03",
+    "layer": "canon",
+    "claim_type": "fact"
+  },
+  {
+    "id": "doc_qepe_usb_build",
+    "node_class": "Document",
+    "title": "QEPE_USB_Build.pdf",
+    "variant_titles": [
+      "QEPE USB Vault – MVP Build Plan"
+    ],
+    "type": "note",
+    "version": "1.0",
+    "date": "2026-03-27",
+    "appendix_number_GFUP": null,
+    "appendix_number_atlas": null,
+    "canon_status": "draft",
+    "canon_status_date": "2026-03-27",
+    "line_count": null,
+    "source_type": "file",
+    "confidence": "high",
+    "provenance": {
+      "chunk_id": "CHUNK_6",
+      "file_id": "turn25file1",
+      "line_range": [
+        null,
+        null
+      ],
+      "session_note": "QEPE USB MVP build artifact."
+    },
+    "earliest_evidence": "2026-03-27",
+    "latest_evidence": "2026-04-03",
+    "layer": "canon",
+    "claim_type": "fact"
+  }
+]
