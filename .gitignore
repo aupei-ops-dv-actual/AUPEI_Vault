@@ -9,3 +9,13 @@ Thumbs.db
 
 # Copilot local index (rebuilds on each machine)
 copilot/
+
+# Python build artifacts (kernels under 03_Atlas_of_Constants/ etc.)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+*.egg-info/
+.venv/
+venv/

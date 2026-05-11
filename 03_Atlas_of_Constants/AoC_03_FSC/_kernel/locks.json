@@ -1,0 +1,164 @@
+{
+  "_metadata": {
+    "version": "2.0.0-kernel",
+    "title": "α (fine-structure constant) — canonical locks for the academy-grade kernel",
+    "based_on": "AoC_Dev_137_1.0.pdf (R@ + Sancho-5o + C@ Sonnet 4.5 + Gemini 2.5 Flash, 11/11/2025)",
+    "kernel_authors": ["R@", "C@ the Red (ζ synth pole)"],
+    "kernel_date": "2026-05-10",
+    "purpose": "Reproducible, audit-trail-clean kernel for the v2.0 α derivation. Supersedes the iPad_Mini_Provenance/Unique_Artifacts/locks.json which had stale β'_α / g_star / ξ* values that did not match the script's own formulas.",
+    "predecessor": "AUPEI_Vault/10_Academy_Operations/iPad_Mini_Provenance/Unique_Artifacts/locks.json (v1.0.0, 2025-11-17)",
+    "license": "MIT (code), CC-BY-4.0 (data)"
+  },
+
+  "epistemic_status": {
+    "verified": [
+      "α_pred = (A₁/A₃)·r/(4π) yields 1/136.9848 from locked inputs to 80 decimal digits",
+      "Boundary saturation |α_err| = |δα|_max holds to machine epsilon (residual ~ 1e-15 in float, ~ 1e-50 in mpmath)",
+      "Flow stability β'(g*) < 0 confirmed",
+      "E_ξ stability margin: 95.5% safe (well below the 5.5 instability threshold)"
+    ],
+    "open": [
+      "A₁/A₃ and r are not uniquely determined by the three closure equations in dev paper §3.1: only one equation + one definition + one inequality for three unknowns. See AoC_03_Alpha_Closure_Underdetermination_Trailhead.md.",
+      "ξ* is derived from the saturation condition, not from an independent physical principle — saturation residual is tautologically machine-precision.",
+      "The 374 ppm gap to CODATA is interpreted as 'QED dressing,' but the QED dressing computation from first principles is an open item (acknowledged in CONTENT v2.0 §2.2).",
+      "Why specifically α_pred ≈ 1/136.9848 (and not 1/137.5 or 1/136.5) — i.e., what selects this specific value of r=0.01495 — is not derived. r is a chosen input."
+    ]
+  },
+
+  "geometric_inputs_from_AoC_01": {
+    "j_11": {
+      "value": 3.8317059702075123,
+      "description": "First positive zero of Bessel function J_1",
+      "source": "scipy.special.jn_zeros(1, 1)[0]",
+      "load_bearing": "Constitutes the confinement-mode eigenvalue per CONTENT v2.0 §1a.3"
+    },
+    "j_11_squared": {
+      "value": 14.681970642123902,
+      "formula": "j_11 ** 2",
+      "description": "Confinement-mode eigenvalue λ_conf"
+    },
+    "pi_squared": {
+      "value": 9.869604401089358,
+      "formula": "math.pi ** 2",
+      "description": "Curvature-closure mode λ_curv"
+    },
+    "Delta_pi": {
+      "value": 4.812366241034544,
+      "formula": "j_11**2 - pi**2",
+      "description": "Collapse-protection gap (geometric input to α derivation)"
+    }
+  },
+
+  "locked_flow_parameters": {
+    "A1_over_A3": {
+      "value": 6.1361563334,
+      "decimal_precision": 10,
+      "uncertainty": "±1e-10 (numerical)",
+      "description": "Flow coefficient ratio in β(g) = a₁g - a₃g³ where a₁ = A₁·r and a₃ = A₃",
+      "provenance_note": "v2.0 framing presents this as 'self-consistent closure (Eq. 3.1-3.3)' from the dev paper, but the closure equations as stated do not uniquely determine (A₁/A₃, r). This value is back-computed from α_pred = 1/136.9848 given r = 0.01495 below. See trailhead for the open question.",
+      "load_bearing": "Primary lock — α_pred depends on this directly"
+    },
+    "r": {
+      "value": 0.01495,
+      "decimal_precision": 5,
+      "uncertainty": "±1e-5 (numerical)",
+      "description": "Constraint/extension ratio r = ζ/ω",
+      "provenance_note": "Chosen input. The precision asymmetry between r (5 digits) and A₁/A₃ (10 digits) is evidence that r is the free parameter and A₁/A₃ is back-computed.",
+      "load_bearing": "Primary lock — α_pred depends on this directly"
+    },
+    "gamma": {
+      "value": 1,
+      "description": "Power-law exponent in a₁(r) = A₁·r^γ",
+      "justification": "Minimal model (dev paper §2.1). γ ≠ 1 just rescales r without changing α."
+    },
+    "K": {
+      "value": 1,
+      "description": "Order-unity normalization constant in drift bound",
+      "justification": "Minimal model (dev paper §2.5). Robustness tested over K ∈ [0.5, 2]."
+    }
+  },
+
+  "empirical_reference": {
+    "alpha_CODATA_2018": {
+      "value": 0.0072973525693,
+      "uncertainty": 1.1e-11,
+      "value_inverse": 137.035999084,
+      "source": "Tiesinga et al., Rev. Mod. Phys. 93, 025010 (2021)"
+    }
+  },
+
+  "computational_environment": {
+    "python_version": ">=3.10",
+    "required_packages": {
+      "mpmath": ">=1.3.0",
+      "numpy": ">=1.26.0",
+      "scipy": ">=1.10.0"
+    },
+    "precision_decimal_digits": 80,
+    "cross_check_tolerance_float": 1e-15,
+    "deterministic": true,
+    "bit_for_bit_reproducible": true
+  },
+
+  "expected_outputs": {
+    "alpha_pred": {
+      "value": 0.007300082100038245,
+      "value_inverse": 136.98476110625443,
+      "formula": "(A1_over_A3 * r) / (4 * pi)",
+      "decimal_precision_internal": 80
+    },
+    "alpha_err_absolute": {
+      "value": 2.7295107388e-06,
+      "formula": "abs(alpha_pred - alpha_CODATA_2018)",
+      "value_ppm": 374.04
+    },
+    "alpha_err_relative": {
+      "value": 0.00037403970,
+      "formula": "alpha_err / alpha_CODATA_2018"
+    },
+    "g_star": {
+      "value": 0.30287875000095186,
+      "formula": "sqrt(A1_over_A3 * r ** gamma)"
+    },
+    "beta_prime_g": {
+      "value": -0.18347107,
+      "formula": "-2 * A1_over_A3 * r ** gamma",
+      "negative": true,
+      "stability_note": "Negative => IR-stable fixed point"
+    },
+    "beta_prime_alpha": {
+      "value": -0.008844159,
+      "formula": "(g_star / (2 * pi)) * beta_prime_g",
+      "note_on_dev_paper": "Dev paper §2.12 reports -0.00274289 for this quantity, which differs from the formula in §2.10-2.11 by approximately a factor of 3.23. The kernel uses the formula as stated; the dev paper's numerical value appears stale or to use an unstated convention."
+    },
+    "xi_star": {
+      "value": 0.00148522,
+      "formula": "abs(alpha_err * Delta_pi / beta_prime_alpha)",
+      "tautology_note": "ξ* is determined by the saturation condition with α_err as input. The resulting saturation residual is therefore machine-precision by construction, not by physical prediction."
+    },
+    "delta_alpha_max": {
+      "value": 2.7295107388e-06,
+      "formula": "K * abs(xi_star * beta_prime_alpha) / Delta_pi",
+      "equals_alpha_err": true
+    },
+    "saturation_residual": {
+      "expected_machine_epsilon": 1e-15,
+      "description": "|α_err - δα_max| — exactly zero in mpmath at 80-digit precision"
+    },
+    "E_xi": {
+      "value": 0.2467,
+      "formula": "(1/alpha_CODATA - 1/alpha_pred) * Delta_pi",
+      "threshold": 5.5,
+      "safety_margin_percent": 95.5,
+      "description": "Dimensionless ξ-energy — well below instability"
+    }
+  },
+
+  "verification_protocol": {
+    "script": "src/verify_alpha_kernel.py",
+    "tests": "tests/test_alpha_kernel.py",
+    "expected_runtime_seconds": 1,
+    "exit_code_pass": 0,
+    "exit_code_fail": 1
+  }
+}
