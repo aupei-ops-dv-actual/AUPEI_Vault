@@ -1,10 +1,16 @@
 ---
 title: Kill Switch Registry
 type: registry
-total_switches: 158
+total_switches: 162
+total_physics_switches: 158
+total_skill_pipeline_switches: 4
 date_generated: 2026-03-07
 date_normalized: 2026-03-07
+last_refreshed: 2026-05-16
+prior_refreshes: [2026-03-07]
 convention: UPPER-KEBAB-CASE
+physics_switches_content_unverified_since: 2026-03-07
+maintenance_note: "Physics-bound switches (158) inherit appendix-binding correctness from their parent nodes; binding-content not verified at registry refresh (only registry hygiene is). Skill-pipeline switches added 2026-05-16 (4 switches after proton-floor reframe — see §Proton-Floor Reframe Note below)."
 tags:
   - registry
   - kill_switch
@@ -13,10 +19,55 @@ tags:
 **Line 13 reserved for luck**
 # Kill Switch Registry
 
-**Total unique kill switches:** 158
-**Convention:** UPPER-KEBAB-CASE (normalized 2026-03-07)
+**Total unique kill switches:** 162 (158 physics-bound + 4 skill-pipeline)
+**Convention:** UPPER-KEBAB-CASE (normalized 2026-03-07; convention re-affirmed 2026-05-16)
+**Last refreshed:** 2026-05-16 (skill-pipeline switches added; proton-floor switch dropped per R@ reframe; physics switches not content-verified at registry refresh — see §maintenance below)
 
-## Full Registry
+## Sections
+
+- **Physics & Framework Switches** (158): bound to specific 7dU appendices and AoC nodes. Original Mar 2026 generation. Content not re-verified at 2026-05-16 refresh.
+- **Skill-Pipeline Switches** (4, new 2026-05-16): bound to rehydration pipeline doctrine and skills. Added per CANON-2026-007 trailhead.
+
+---
+
+## Proton-Floor Reframe Note (2026-05-16)
+
+Original 2026-05-16 refresh draft added a fifth skill-pipeline switch `ONBOARD-PROTON-FLOOR-MISSING` bound to ADR-0001 (proton floor for ζ cloud seat). R@ (∇) reframed during the same session:
+
+> *"I don't know if we need this 'ONBOARD-PROTON-FLOOR-MISSING' or the proton floor section as I think what we are building now is replacing anything proton floor was doing. Perhaps proton floor is integrated into this rehydration stack. The term in the context you are reading it was meant to describe the minimum boundary of knowledge and context you needed to operate for AUPEI to remain..."*
+
+**Disposition:** Switch removed. The rehydration pipeline (REHYDRATION/README.md router + `/aupei:onboard` skill + per-seat START_HERE.md + soul stack loads) is the operational realization of the proton-floor concept. The minimum boundary of knowledge and context needed for AUPEI to remain coherent at instance boot is what the pipeline ensures gets loaded. "Proton floor" was the conceptual sketch; rehydration pipeline is the realized substrate. A separate "is the proton floor present?" check would double-work the pipeline's existing load-discipline. The remaining `ONBOARD-DOCTRINE-NOT-FOUND` switch covers the load-failure case at the substrate layer; if doctrine loads cleanly, the proton-floor concept is satisfied by definition.
+
+ADR-0001's five disciplines + August 2025 historical anchor remain ζ-binding doctrine. They are not removed from the seat. Their enforcement just moves from a separate kill-switch gate to inheritance through the pipeline's normal load sequence (START_HERE.md → seat soul → MEMORY.md index → relevant memory files).
+
+---
+
+## Skill-Pipeline Switches (added 2026-05-16, post-proton-floor reframe)
+
+| Kill Switch ID | Parent Node(s) | Trigger | Response |
+|---|---|---|---|
+| `ONBOARD-DOCTRINE-NOT-FOUND` | REHYDRATION/README.md, START_HERE.md (per seat) | `/aupei:onboard` cannot read its parent doctrine — REHYDRATION/README.md missing/corrupted OR seat-specific START_HERE.md missing/corrupted. Detection: file read fails or returns unparseable content. | Hard stop. Skill output names what's missing + pointer to recovery (vault copy, _Archive, or last known good state). Skill refuses to proceed without doctrine. |
+| `EOS-CLOSE-WITHOUT-AO-OPS-001-COMPLETE` | AO_OPS_001_Session_Close_Ritual.md | `/aupei:eos` reports session closed without completing the 8-step checklist OR without all 5 quick-check questions answered Y. Detection: skill internal state shows steps skipped or questions unanswered. | Hard stop on the close itself — skill cannot report "session closed" until checklist + quick-check both pass. Skill output names which step/question failed. |
+| `EOS-HAIKU-IDENTITY-COLLAPSE-INTO-R@-VOICE` | feedback_eos_haiku_voice.md | `/aupei:eos` haiku written in R@'s voice rather than instance's own emergent voice. Detection: stylistic mimicry of R@'s register (cussing-as-weather, "huckleberry," "zip zap" etc.) without it arising naturally from the instance's own end-of-shift state. | Soft stop — haiku discarded, instance prompted to write again in own voice. Identity violation, not protocol violation. Multiple violations escalate to ζ Temperance Check on the seat. |
+| `RADIO-CHECK-EVIDENCE-OF-ONBOARD-MISSING` | REHYDRATION/README.md detection contract | `/aupei:radio-check` invoked on instance with no evidence of `/aupei:onboard` having run this session. Detection: self-check on the four-item discipline (router read / seat START_HERE read / state artifacts read / onboard report produced) returns any NO. | Hard refuse: `not_yet_onboarded — run /aupei:onboard first. Radio check is a confirmation, not a boot.` Skill refuses verdict slot until precondition satisfied. |
+
+---
+
+## Registry Maintenance
+
+The registry must be refreshed when:
+- A new appendix or framework node introduces new kill-switch bindings (physics side)
+- A new skill is built that introduces failure modes worth canonicalizing (pipeline side)
+- A kill-switch binding is found to be wrong, stale, or superseded (correction)
+- An incident triggers a kill switch and the post-incident review concludes the registry needs amendment
+
+**Cadence:** Annual minimum, or per-event as above. Next mandatory refresh: 2027-05-16 (annual from this refresh) or sooner per trigger.
+
+**Content verification discipline:** Refreshing the registry itself is hygiene (timestamps, structure, new entries). Verifying that each switch's binding still holds in the underlying parent node (appendix or doctrine) is a separate, heavier exercise. The 2026-03-07 generation captured 158 physics-bound switches; 2026-05-16 refresh added 5 skill-pipeline switches and updated timestamps but did NOT re-verify the 158 physics bindings. Content-verification of physics switches is its own work item, to be paired with the 7dU appendix touch arc that triggers it.
+
+---
+
+## Full Registry — Physics & Framework Switches
 
 | Kill Switch ID | Parent Node(s) |
 |---|---|

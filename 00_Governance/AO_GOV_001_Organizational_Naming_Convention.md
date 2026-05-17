@@ -3,11 +3,21 @@ node_id: AO_GOV_001
 title: "Organizational Naming Convention — Tripartite Entity Architecture"
 version: v1.0
 date_minted: 2026-03-19
+date_promoted: 2026-05-16
 author: "R@ / C@ the Red"
 entity: AUPEI
 vault: A
 layer: governance
-epistemic_status: PROPOSED
+epistemic_status: CANONICAL
+status: CANONICAL
+promoted_by: "∇ (R@) — confirmed operationally adopted across the vault and ratified 2026-05-16 (post-hoc back-sync from operational adoption)"
+adoption_evidence: |
+  Convention is operationally in use throughout the vault as of 2026-05-16:
+  - DV- prefix: DV-LEG-001 (Entity Matrix), DV-LEG-004 (Legal Kill Switch Registry)
+  - AO- prefix: AO_GOV_001 (this doc), AO_GOV_002 (CANON Register), AO_OPS_001 (Session Close Ritual), AO_INFRA_000 through AO_INFRA_007
+  - CIW- prefix: CIW-2026-001/002/003 (three Chamber Sessions filed in Chamber_Sessions/)
+  - Division/Ministry/Institute/Council vocabulary: used throughout the vault, in CANON Register entries, in operations_log_staging entries, and in Chamber session records
+  - Two-regulator adoption threshold satisfied retrospectively: ζ (this doc), ω (used DV- prefixing in DV-LEG drafts), ξ (used CIW- numbering in session authorship)
 tags: [governance, naming, convention, doovinci, aupei, geometric-foundations, organizational-structure]
 depends_on: [AO_GOV_CHAMBER]
 ---
@@ -182,6 +192,12 @@ Unit → Division/Ministry/Institute Chief → Entity Head → Council → Direc
 
 ## IX. RATIFICATION
 
-This naming convention is PROPOSED. It becomes ACTIVE upon Director approval and adoption by at least two regulator seats through the Chamber.
+**Status: CANONICAL — promoted 2026-05-16 by ∇ (R@) on operational-adoption evidence.**
 
-Once ratified, all new organizational units, documents, and agent designations should follow this convention. Existing documents may be migrated over time.
+This naming convention was minted 2026-03-19 as PROPOSED. It was operationally adopted across the vault during the subsequent ~60 days without formal ratification — the convention shaped every new document, every Chamber session ID, every ops_log entry, every CANON Register entry. The two-regulator-seat adoption threshold was satisfied retrospectively (ζ in this doc, ω in DV-LEG drafting, ξ in CIW- session authorship).
+
+On 2026-05-16, ∇ directed a back-sync ratification: the convention is what it has been in practice for ~60 days. Status: PROPOSED → CANONICAL. Frontmatter `adoption_evidence` field captures the operational track.
+
+**Going forward:** All new organizational units, documents, and agent designations follow this convention. Existing documents continue to be migrated where touched. New prefixes or vocabulary additions (e.g., MO- for Manual of Ops modules, CR- for Council Resolutions, CCO-PROT- for council protocols) follow the same entity-signal-by-prefix principle and should be added to this doc as v1.1 amendments when ratified.
+
+**Audit note:** The PROPOSED-but-operational gap is itself an instance of the pattern flagged in CANON Register CANON-2026-002 (canonical body, stale frontmatter). The same gap shape recurs across multiple governance docs; ongoing eos discipline should catch this drift at session close.

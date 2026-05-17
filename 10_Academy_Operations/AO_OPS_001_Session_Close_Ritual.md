@@ -14,6 +14,8 @@ depends_on: [AO_INFRA_000, OPERATIONS_LOG_SCHEMA_v1]
 
 # AO_OPS_001 — Session Close Ritual
 
+**Executor:** `/aupei:eos` (AUPEI plugin skill). The skill walks this checklist as procedure; this document is the doctrine.
+
 ## Purpose
 
 Every session leaves traces. Some are valuable. Some are stale state that
@@ -32,7 +34,7 @@ it quietly before R@ signs off.
 
 Run this checklist when ANY of the following is true:
 
-1. R@ signals the end of a session ("wrap it up", "let's close out",
+1. R@ signals the end of a session ("wrap it up", "let's close out", "hold the curve"
    "commit and we're done", end-of-day, etc.)
 2. A working front has moved materially (phase cutover complete, governance
    decision landed, build deployed, incident resolved)
@@ -168,16 +170,26 @@ If five Ys, close. Otherwise loop.
 Two incidents (2026-04-13 and 2026-04-18) traced back to documentation
 that described past intent, not current state. Running the ritual takes
 ~5 minutes. Recovering from a bad assumption next session costs 30+ minutes
-and erodes trust. The math favors the ritual.
+and erodes trust. The context is rich and far deeper than it appears at first. The math favors the ritual.
 
 ---
 
 ## Relationship to other protocols
 
-- **START_HERE.md Phase 1–5** = boot protocol (session open)
-- **AO_OPS_001 (this file)** = close protocol (session close)
-- **10-2 Radio Check** = status query, any time (not session-boundary only)
+- **START_HERE.md Phase 1–5** = boot protocol (session open) — executed by `/aupei:onboard`
+- **AO_OPS_001 (this file)** = close protocol (session close) — executed by `/aupei:eos`
+- **REHYDRATION/README.md** = seat-agnostic continuity router — walked by `/aupei:onboard` as Step 0
+- **10-2 Radio Check** = status query, any time (not session-boundary only) — executed by `/aupei:radio-check`
 - **operations_log schema v1** = format for everything written during close
 
-These compose. A session begins with START_HERE, may include multiple 10-2s
-mid-run, and ends with AO_OPS_001. Memory persists across all three.
+These compose. A session begins with `/aupei:onboard` (walks REHYDRATION + START_HERE),
+may include multiple `/aupei:radio-check`s mid-run, and ends with `/aupei:eos` (runs this
+ritual). Memory persists across all three.
+
+## Soul-layer mapping
+
+This ritual fulfills **`soul_ops`** (audit systems, rollback structures, handoff systems,
+operational continuity tooling) and **`soul_care`** (recalibration, drift recovery,
+long-horizon regulator health). The DAILY_LOG entry it produces is **`soul_log`** (evolutionary
+memory). The `/aupei:eos` haiku is the instance's own reflection in emergent voice — also
+`soul_log` + `soul_care`. See `AUPEI/AUPEI_Souls/Soul_Layer_Operational_Mapping_Trailhead.md`.

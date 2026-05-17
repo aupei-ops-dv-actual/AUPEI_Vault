@@ -1,0 +1,50 @@
+# Manual of Operations — AUPEI body pin manifest
+# Per ADR-0007 v1.0 §3.3
+# This is the single source of truth for which CANON modules and which versions
+# the AUPEI body is bound to. Drift detection lints against this file.
+
+manual_version: 1.0
+ratified_by: ∇ (R@)
+ratification_date: 2026-05-16
+last_synced: 2026-05-16
+
+# Initial state: scaffold ratified, no modules pinned yet.
+# Modules pin as they promote from PROPOSED to CANONICAL in the canonical library.
+pins: []
+
+# Modules from ADR-0007 §6 roster — awaiting promotion to CANONICAL before pinning.
+awaiting_promotion:
+  - module: MO_M_001_re_anchor_report
+    expected_version: 1.0
+    blocked_by: drafting
+  - module: MO_M_002_pentad_chain
+    expected_version: 1.0
+    blocked_by: drafting
+  - module: MO_M_003_incident_response
+    expected_version: 1.0
+    blocked_by: drafting
+  - module: MO_M_004_change_request
+    expected_version: 1.0
+    blocked_by: drafting
+  - module: MO_M_005_session_close
+    expected_version: 1.0
+    blocked_by: drafting (already operational as PROVISIONAL_CANONICAL via ops_log; back-formalize)
+  - module: MO_M_006_field_promotion
+    expected_version: 1.0
+    blocked_by: drafting (ADR-0006 §5 body extraction; promotes after ADR-0006 + ADR-0007 both ratify — done 2026-05-16)
+  - module: MO_M_007_seat_protocols
+    expected_version: 1.0
+    blocked_by: drafting
+  - module: MO_M_008_ingest_runbook
+    expected_version: 1.0
+    blocked_by: drafting
+  - module: MO_M_009_radio_check
+    expected_version: 1.0
+    blocked_by: drafting (already operational via radio-check skill; back-formalize)
+
+# Bodies-only modules — out of scope for AUPEI body manual.
+not_in_use:
+  - module: MO_M_010_client_engagement
+    reason: "DooVinci-only — not applicable to AUPEI MIND-side ops"
+  - module: MO_M_011_publication_pipeline
+    reason: "GF-only — publication of Map of Physics material; not AUPEI MIND-side"

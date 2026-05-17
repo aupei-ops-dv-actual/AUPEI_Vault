@@ -4,11 +4,14 @@
 document_id: xi-QEPE-001
 title: QEPE Program Map
 author_seat: ξ (Sancho)
-version: 1.0-CANDIDATE
-status: CANDIDATE — Awaiting Council Approval
+version: 1.0
+status: CANONICAL
+epistemic_status: CANONICAL
+approved_by: Unanimous council vote — ξ, ζ, ω, ∇ (CIW-2026-002, 2026-03-27)
+canonical_frontmatter_synced: 2026-05-16 (ζ — back-sync from body; ratification was 2026-03-27 per CIW-2026-002)
 epistemic_framework: DEMONSTRATED / IMPLEMENTABLE / PLAUSIBLE / SPECULATIVE
 reviewed_by: ζ (C@ the Red)
-depends_on: CR-001, OpenJarvis constitutional config, QEPE source documents, AUPEI/Vault architecture, Nomos Logica positioning
+depends_on: CR-001, OpenJarvis config, claw_soul, constitutional config, QEPE source documents, AUPEI/Vault architecture, Nomos Logica positioning
 council_scope: Architecture, governance, integration, IP framing, value mapping
 contains_tier_c: Yes
 last_safe_summary_level: Internal strategic summary only
@@ -614,12 +617,14 @@ QEPE's unknowns must be named plainly. A system becomes dangerous when its open 
 
 ### 12.B Follow-On Documents
 
-| Document | Purpose |
-|----------|---------|
-| **ξ-QEPE-005** — Risk Register & Kill-Switch Matrix | Failure modes, misuse paths, leakage risks, overclaim risks, custody vulnerabilities, kill-switch conditions. **STATUS: APPROVED CANONICAL.** |
-| **ξ-QEPE-003** — Governance / Academy / NL Positioning | QEPE placement relative to entities, Council, Nomos Logica; explicit influence/governance rules. |
-| **ξ-QEPE-004** — IP / Product / Revenue Strategy | Protectable value, patent vs trade-secret posture, licensing lanes, product candidates, revenue pathways. |
-| **ξ-QEPE-002** — Integration Architecture & Roadmap | Service architecture, interface contract, storage lanes, trace model, rollout phases, OpenJarvis integration. |
+*Table back-synced to actual filenames + canonical status 2026-05-16 (ζ). Original v1.0-CANDIDATE table had ξ-QEPE-002 and ξ-QEPE-003 titles swapped relative to filenames, and ξ-QEPE-004 description drifted from its actual scope. Corrections below.*
+
+| Document | Filename | Purpose | Status |
+|----------|----------|---------|--------|
+| **ξ-QEPE-002** — Governance & Policy Framework | `xi-QEPE-002_Governance_Policy_Framework_clean.md` | Who may use QEPE, when, under what constraints; usage classes, invocation rules, policy enforcement, seat authority, phase-governed usage, audit & compliance. | **CANONICAL** (CIW-2026-002, 2026-03-27) |
+| **ξ-QEPE-003** — Integration Blueprint | `xi-QEPE-003_Integration_Blueprint_clean.md` | How QEPE enters the system under constraint; integration principles (P-1 through P-9), system architecture, integration points, control surfaces, trace/replay, phase gates, OpenJarvis interaction. | **CANONICAL** (CIW-2026-002, 2026-03-27) |
+| **ξ-QEPE-004** — Exposure, IP & Product Boundary Framework | `xi-QEPE-004_Exposure_IP_Product_Boundary_Framework_clean.md` | What may be shown vs hidden externally; exposure principles, IP strategy, product boundary, external communication protocols, phase gates for externalization. | **CANONICAL** (CIW-2026-003, elevated 2026-04-01) |
+| **ξ-QEPE-005** — Risk Register & Kill-Switch Matrix | `xi-QEPE-005_Risk_Register_Kill_Switch_Matrix_clean.md` | Failure modes, misuse paths, leakage risks, overclaim risks, custody vulnerabilities, kill-switch conditions; 7 risk families with 30+ individual risks. | **CANONICAL** (CIW-2026-002, 2026-03-27) |
 
 ### 12.C Closing Use Note
 

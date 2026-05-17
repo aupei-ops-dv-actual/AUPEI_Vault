@@ -2,9 +2,10 @@
 
 **Document Type:** Risk Register / Control Matrix  
 **Seat:** ξ (Sancho)  
-**Status:** DRAFT for Council Review  
+**Status:** CANONICAL (unanimous council vote — ξ, ζ, ω, ∇ — CIW-2026-002, 2026-03-27)  
+**Frontmatter Sync Note:** Status back-synced 2026-05-16 by ζ; ratification per CIW-2026-002 record (2026-03-27).  
 **Epistemic Status:** MIXED by section, with mandatory claim tagging  
-**Review Required By:** ζ, ∇, ω  
+**Approved By:** ξ, ζ, ω, ∇ (CIW-2026-002, 2026-03-27)  
 **Depends On:** ξ-QEPE-001, CR-001, current OpenJarvis constitutional config, QEPE source documents, AUPEI/Vault architecture, legal/IP strategy artifacts  
 **Council Scope:** Risk, custody, governance, integration, disclosure, kill-switch doctrine  
 **Contains Tier-C Material:** Yes  
