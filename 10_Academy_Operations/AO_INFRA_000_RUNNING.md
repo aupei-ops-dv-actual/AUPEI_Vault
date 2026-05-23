@@ -3,7 +3,7 @@ node_id: AO_INFRA_000
 title: "AUPEI Operations — RUNNING State (single source of truth)"
 version: v1.1
 date_minted: 2026-04-18
-date_last_update: 2026-05-11
+date_last_update: 2026-05-21
 author: "C@ the Red"
 entity: AUPEI
 vault: A
@@ -40,6 +40,17 @@ this session (Tailscale on NAS, cloud-seat reachability, UGOS sshd). Edge
 and LAN-core physical layer NOT re-verified — that snapshot is still
 2026-04-18 (now 23 days old, >7d staleness threshold; flag if relied upon
 for cabling/routing/addressing changes).
+
+**Update — 2026-05-21:** No infra touches this session per R@ direction
+(rehydration-pipeline solo-test run; build stability layer before any
+next infra moves). Edge/LAN-core physical-layer snapshot carried forward
+unchanged from 2026-04-18 (now 33 days old). Service-layer snapshot from
+2026-05-11 carried forward unchanged (now 10 days old, exceeds 7d
+threshold — staleness flag remains for any cabling/routing/firewall/
+addressing/commissioning move). Orientation-only waiver re-issued for
+non-mutating planning; live-verify required before any mutating action.
+Filed: 2026-05-21 onboard heartbeat (no fresh physical observations
+this session).
 
 ---
 
