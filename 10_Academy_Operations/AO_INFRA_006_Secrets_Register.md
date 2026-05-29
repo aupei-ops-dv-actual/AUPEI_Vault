@@ -111,11 +111,14 @@ visible for a future audit.
 - **Where to look:** R@ (biometric + password)
 
 ### Lorex NVR
-- **What:** NVR admin
+- **What:** NVR admin (web UI)
 - **Who holds it:** R@
 - **Where to look:** R@'s password manager
+- **Reach from R@ Mac:** `http://192.168.0.100/` (post-2026-05-28 cutover; was on BGW LAN at 192.168.1.x before)
+- **Network zone:** NET_SECURITY (Protectli igb2, 192.168.0.0/24), DHCP-leased, segmented from LAN/IOT/GUEST/OPS
 - **Last rotated:** at commissioning
 - **Rotation cadence:** ad hoc
+- **History:** moved off BGW exposed zone into NET_SECURITY 2026-05-28 per `ops_infra_change_2026-05-28_001`
 
 ---
 
@@ -214,6 +217,16 @@ visible for a future audit.
 - **Where to look:** R@'s password manager / ExpressVPN app
 - **Note:** PF anchor `xvpn` is a fail-closed kill-switch on ungraceful
   disconnect — see `ops_incident_2026-04-18_001.json`
+
+### Mullvad VPN (MacBook)
+- **What:** Mullvad VPN account credentials
+- **Who holds it:** R@
+- **Where to look:** R@'s password manager / Mullvad app
+- **System install:** `/Library/LaunchDaemons/net.mullvad.daemon.plist`
+  installed 2026-03-25
+- **Discovery:** surfaced during `ops_incident_2026-05-28_001` forensic
+  sweep (was undocumented in this register until then); R@ confirmed
+  legitimate. Documentation gap closed by this entry.
 
 ### DooVinci Google Workspace
 - **What:** jed@doovinci.com + aupei_ops@doovinci.com

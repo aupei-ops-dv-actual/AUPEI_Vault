@@ -131,16 +131,25 @@ depends_on: [AO_INFRA_003, AO_INFRA_004]
 | **Location** | Amelia's Floor, server closet |
 | **Power** | EcoFlow Smart Panel 2 |
 
-### Netgear GS324TP — Rack Switch (POST-CUTOVER)
+### Netgear GS324TP — Rack Switch (DEPLOYED)
 
 | Field | Value |
 |-------|-------|
 | **Role** | Core distribution switch. Trunk to all floors. |
-| **Ports** | 24× PoE+ Gigabit |
+| **Model** | GS324TP S350 24-Port Gigabit PoE+ Smart Managed Pro w/ 2 SFP (190W PoE budget) |
+| **Ports** | 24× PoE+ Gigabit + 2× SFP |
+| **Serial** | 5LF3025BA04A4 |
+| **Base MAC** | BC:A5:11:B8:E0:5C |
+| **Firmware** | 1.8.0.5 |
+| **IP** | 10.10.10.131 (DHCP static map via Protectli, MAC-pinned) |
 | **Location** | Amelia's Floor, server closet |
-| **Uplink** | Protectli igb1 (trunk: VLANs 10, 20, 30) |
-| **Downlinks** | Trunk to QNAP desk switch (cat6 ceiling run), trunks to Main Deck and Poncho's floor, camera PoE ports |
-| **Status** | **PURCHASED, NOT DEPLOYED** |
+| **Uplink** | Protectli LAN (igb1), trunk port = **g23** (1 Gbps) — protect from VLAN misconfig |
+| **Downlinks** | g3 (downstream Eero/bridge, 100M), g5 (Sony Bravia Redrum_Vision, 100M), g6 (Yamaha Pancho-s-Tunes, 100M), g7 (Eero mesh, 1G), other ports per active inventory |
+| **PoE State** | Globally Enabled per-port, 0 W consumed — zero cameras currently on this switch (per 2026-05-28 inventory; cameras are on the Lorex NVR's built-in PoE) |
+| **VLAN Trunking** | Currently dumb-switch mode (VLAN 1 only); managed-mode trunking DEFERRED |
+| **Admin** | http://10.10.10.131/ — credential in R@'s password manager (post 2026-05-28 reset + R@ password change) |
+| **User Manual** | [`INFRA_MANUALS/Netgear_GS324TP_S350_UserManual_GS324T-GS324TP-GS348T.pdf`](INFRA_MANUALS/Netgear_GS324TP_S350_UserManual_GS324T-GS324TP-GS348T.pdf) — local PDF, S350 series user manual |
+| **Status** | **DEPLOYED** — admin plane recovered 2026-05-28; pinned at 10.10.10.131 via DHCP static map; see `ops_infra_change_2026-05-28_001` |
 
 ### QNAP QSW-M2106-4C — Desk Switch (POST-CUTOVER)
 
